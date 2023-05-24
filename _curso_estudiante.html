@@ -1,0 +1,1555 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- BEGIN HEAD -->
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <meta name="description" content="Responsive Admin Template" />
+  <meta name="author" content="SmartUniversity" />
+  <title>Oppia | Plataforma Educativa</title>
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet" type="text/css" />
+  <!-- icons -->
+  <link href="fonts/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+  <link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+  <link href="fonts/material-design-icons/material-icon.css" rel="stylesheet" type="text/css" />
+  <!--bootstrap -->
+  <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <link href="assets/plugins/summernote/summernote.css" rel="stylesheet" />
+  <!-- data tables -->
+  <link href="assets/plugins/datatables/plugins/bootstrap/dataTables.bootstrap4.min.css" rel="stylesheet"
+    type="text/css" />
+
+
+  <!-- Material Design Lite CSS -->
+  <link rel="stylesheet" href="assets/plugins/material/material.min.css" />
+  <link rel="stylesheet" href="assets/css/material_style.css" />
+  <!-- inbox style -->
+  <link href="assets/css/pages/inbox.min.css" rel="stylesheet" type="text/css" />
+  <!-- Theme Styles -->
+  <link href="assets/css/theme/light/theme_style.css" rel="stylesheet" id="rt_style_components" type="text/css" />
+  <link href="assets/css/plugins.min.css" rel="stylesheet" type="text/css" />
+  <link href="assets/css/theme/light/style.css" rel="stylesheet" type="text/css" />
+  <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+  <link href="assets/css/theme/light/theme-color.css" rel="stylesheet" type="text/css" />
+  <!-- Date Time item CSS -->
+  <link rel="stylesheet" href="assets/plugins/flatpicker/css/flatpickr.min.css" />
+  <link href="assets/plugins/sweet-alert/sweetalert2.min.css" rel="stylesheet" />
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="assets/img/favicon.ico" />
+</head>
+<!-- END HEAD -->
+
+<body class="
+      page-header-fixed
+      sidemenu-closed-hidelogo
+      page-content-white page-md
+      header-white
+      white-sidebar-color
+      logo-indigo
+    ">
+  <div class="page-wrapper">
+    <!-- start header -->
+    <div class="page-header navbar navbar-fixed-top">
+      <div class="page-header-inner">
+        <!-- logo start -->
+        <div class="page-logo">
+          <a href="index.html">
+            <span class="logo-icon material-icons fa-rotate-45">school</span>
+            <span class="logo-default">Oppia</span>
+          </a>
+        </div>
+        <!-- logo end -->
+        <ul class="nav navbar-nav navbar-left in">
+          <li>
+            <a href="#" class="menu-toggler sidebar-toggler"><i class="icon-menu"></i></a>
+          </li>
+        </ul>
+        <form class="search-form-opened" action="#" method="GET">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Buscar..." name="query" />
+            <span class="input-group-btn">
+              <a href="javascript:;" class="btn submit">
+                <i class="icon-magnifier"></i>
+              </a>
+            </span>
+          </div>
+        </form>
+        <!-- start mobile menu -->
+        <a class="menu-toggler responsive-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
+          <span></span>
+        </a>
+        <!-- end mobile menu -->
+        <!-- start header menu -->
+        <div class="top-menu">
+          <ul class="nav navbar-nav pull-right">
+            <li>
+              <a class="fullscreen-btn"><i class="fa fa-arrows-alt"></i></a>
+            </li>
+            <!-- start language menu 
+              <li class="dropdown language-switch">
+                <a
+                  class="dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img
+                    src="assets/img/flags/gb.png"
+                    class="position-left"
+                    alt=""
+                  />
+                  Inglés <span class="fa fa-angle-down"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="deutsch"
+                      ><img src="assets/img/flags/de.png" alt="" /> Alemán</a
+                    >
+                  </li>
+                  <li>
+                    <a class="english"
+                      ><img src="assets/img/flags/gb.png" alt="" /> Inglés</a
+                    >
+                  </li>
+                  <li>
+                    <a class="espana"
+                      ><img src="assets/img/flags/es.png" alt="" /> Español</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              end language menu -->
+            <!-- start notification dropdown -->
+            <li class="dropdown dropdown-extended dropdown-notification" id="header_notification_bar">
+              <a class="dropdown-toggle" data-bs-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                <i class="fa fa-bell-o"></i>
+                <span class="badge headerBadgeColor1"> 6 </span>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="external">
+                  <h3><span class="bold">Notificaciones</span></h3>
+                  <span class="notification-label purple-bgcolor">6 nuevas</span>
+                </li>
+                <li>
+                  <ul class="dropdown-menu-list small-slimscroll-style" data-handle-color="#637283">
+                    <li>
+                      <a href="javascript:;">
+                        <span class="time">ahora</span>
+                        <span class="details">
+                          <span class="notification-icon circle deepPink-bgcolor"><i class="fa fa-check"></i></span>
+                          Felicitaciones!.
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:;">
+                        <span class="time">3 mins</span>
+                        <span class="details">
+                          <span class="notification-icon circle purple-bgcolor"><i class="fa fa-user o"></i></span>
+                          <b>Carlos Pardo </b>te ha enviado un mensaje.
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:;">
+                        <span class="time">7 mins</span>
+                        <span class="details">
+                          <span class="notification-icon circle blue-bgcolor"><i class="fa fa-comments-o"></i></span>
+                          <b>Sara Cabrera </b>te ha enviado un mensaje.
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:;">
+                        <span class="time">12 mins</span>
+                        <span class="details">
+                          <span class="notification-icon circle pink"><i class="fa fa-heart"></i></span>
+                          <b>Claudio Hegel </b>ha visto su calificación.
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:;">
+                        <span class="time">15 mins</span>
+                        <span class="details">
+                          <span class="notification-icon circle yellow"><i class="fa fa-warning"></i></span>
+                          La prueba #2-Algebra ha sido completada por el 100%
+                          de los alumnos.
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:;">
+                        <span class="time">10 hrs</span>
+                        <span class="details">
+                          <span class="notification-icon circle red"><i class="fa fa-times"></i></span>
+                          Ha ocurrido un choque de agenda.
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="dropdown-menu-footer">
+                    <a href="javascript:void(0)">
+                      Todas las notificaciones
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <!-- end notification dropdown -->
+            <!-- start message dropdown -->
+            <li class="dropdown dropdown-extended dropdown-inbox" id="header_inbox_bar">
+              <a class="dropdown-toggle" data-bs-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                <i class="fa fa-envelope-o"></i>
+                <span class="badge headerBadgeColor2"> 2 </span>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="external">
+                  <h3><span class="bold">Mensajes</span></h3>
+                  <span class="notification-label cyan-bgcolor">2 nuevos</span>
+                </li>
+                <li>
+                  <ul class="dropdown-menu-list small-slimscroll-style" data-handle-color="#637283">
+                    <li>
+                      <a href="#">
+                        <span class="photo">
+                          <img src="assets/img/prof/prof2.jpg" class="img-circle" alt="" />
+                        </span>
+                        <span class="subject">
+                          <span class="from"> Sarah Smith </span>
+                          <span class="time">ahora </span>
+                        </span>
+                        <span class="message">
+                          Invitación a capacitación...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="photo">
+                          <img src="assets/img/prof/prof3.jpg" class="img-circle" alt="" />
+                        </span>
+                        <span class="subject">
+                          <span class="from"> claudio Coloma </span>
+                          <span class="time">16 mins </span>
+                        </span>
+                        <span class="message">
+                          Fwd: Actualización planificación...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="photo">
+                          <img src="assets/img/prof/prof1.jpg" class="img-circle" alt="" />
+                        </span>
+                        <span class="subject">
+                          <span class="from"> Miguel Farías </span>
+                          <span class="time">2 hrs </span>
+                        </span>
+                        <span class="message">
+                          Coordinación extraprogramática.
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="photo">
+                          <img src="assets/img/prof/prof8.jpg" class="img-circle" alt="" />
+                        </span>
+                        <span class="subject">
+                          <span class="from"> Laura Smith </span>
+                          <span class="time">40 mins </span>
+                        </span>
+                        <span class="message"> Minuta reunión </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="photo">
+                          <img src="assets/img/prof/prof5.jpg" class="img-circle" alt="" />
+                        </span>
+                        <span class="subject">
+                          <span class="from"> Jacob Ramirez </span>
+                          <span class="time">46 mins </span>
+                        </span>
+                        <span class="message">
+                          Solicitud de presupuesto.
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="dropdown-menu-footer">
+                    <a href="#"> Todos los mensajes </a>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <!-- end message dropdown -->
+            <!-- start manage user dropdown -->
+            <li class="dropdown dropdown-user">
+              <a class="dropdown-toggle" data-bs-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                <img alt="" class="img-circle"
+                  src="https://www.exprimiendolinkedin.com/wp-content/uploads/2017/12/Laura-150x150.jpg" />
+                <span class="username username-hide-on-mobile"> Laura </span>
+                <i class="fa fa-angle-down"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-default">
+                <li>
+                  <a href="user_profile.html">
+                    <i class="icon-user"></i> Perfil
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="icon-settings"></i> Configuración
+                  </a>
+                </li>
+                <li>
+                  <a href="#"> <i class="icon-directions"></i> Ayuda </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="login.html"> <i class="icon-logout"></i> Salir </a>
+                </li>
+              </ul>
+            </li>
+            <!-- end manage user dropdown -->
+            <li class="dropdown dropdown-quick-sidebar-toggler">
+              <a id="headerSettingButton" class="mdl-button mdl-js-button mdl-button--icon pull-right"
+                data-upgraded=",MaterialButton">
+                <i class="material-icons">more_vert</i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- end header -->
+    <!-- start color quick setting
+      <div class="settingSidebar">
+        <a href="javascript:void(0)" class="settingPanelToggle">
+          <i class="fa fa-spin fa-cog"></i>
+        </a>
+        <div class="settingSidebar-body ps-container ps-theme-default">
+          <div class="fade show active">
+            <div class="setting-panel-header">Setting Panel</div>
+            <div class="quick-setting slimscroll-style">
+              <ul id="themecolors">
+                <li>
+                  <p class="sidebarSettingTitle">Sidebar Color</p>
+                </li>
+                <li class="complete">
+                  <div class="theme-color sidebar-theme">
+                    <a href="#" data-theme="white"
+                      ><span class="head"></span><span class="cont"></span
+                    ></a>
+                    <a href="#" data-theme="dark"
+                      ><span class="head"></span><span class="cont"></span
+                    ></a>
+                    <a href="#" data-theme="blue"
+                      ><span class="head"></span><span class="cont"></span
+                    ></a>
+                    <a href="#" data-theme="indigo"
+                      ><span class="head"></span><span class="cont"></span
+                    ></a>
+                    <a href="#" data-theme="cyan"
+                      ><span class="head"></span><span class="cont"></span
+                    ></a>
+                    <a href="#" data-theme="green"
+                      ><span class="head"></span><span class="cont"></span
+                    ></a>
+                    <a href="#" data-theme="red"
+                      ><span class="head"></span><span class="cont"></span
+                    ></a>
+                  </div>
+                </li>
+                <li>
+                  <p class="sidebarSettingTitle">Header Brand color</p>
+                </li>
+                <li class="theme-option">
+                  <div class="theme-color logo-theme">
+                    <a href="#" data-theme="logo-white"
+                      ><span class="head"></span><span class="cont"></span
+                    ></a>
+                    <a href="#" data-theme="logo-dark"
+                      ><span class="head"></span><span class="cont"></span
+                    ></a>
+                    <a href="#" data-theme="logo-blue"
+                      ><span class="head"></span><span class="cont"></span
+                    ></a>
+                    <a href="#" data-theme="logo-indigo"
+                      ><span class="head"></span><span class="cont"></span
+                    ></a>
+                    <a href="#" data-theme="logo-cyan"
+                      ><span class="head"></span><span class="cont"></span
+                    ></a>
+                    <a href="#" data-theme="logo-green"
+                      ><span class="head"></span><span class="cont"></span
+                    ></a>
+                    <a href="#" data-theme="logo-red"
+                      ><span class="head"></span><span class="cont"></span
+                    ></a>
+                  </div>
+                </li>
+                <li>
+                  <p class="sidebarSettingTitle">Header color</p>
+                </li>
+                <li class="theme-option">
+                  <div class="theme-color header-theme">
+                    <a href="#" data-theme="header-white"
+                      ><span class="head"></span><span class="cont"></span
+                    ></a>
+                    <a href="#" data-theme="header-dark"
+                      ><span class="head"></span><span class="cont"></span
+                    ></a>
+                    <a href="#" data-theme="header-blue"
+                      ><span class="head"></span><span class="cont"></span
+                    ></a>
+                    <a href="#" data-theme="header-indigo"
+                      ><span class="head"></span><span class="cont"></span
+                    ></a>
+                    <a href="#" data-theme="header-cyan"
+                      ><span class="head"></span><span class="cont"></span
+                    ></a>
+                    <a href="#" data-theme="header-green"
+                      ><span class="head"></span><span class="cont"></span
+                    ></a>
+                    <a href="#" data-theme="header-red"
+                      ><span class="head"></span><span class="cont"></span
+                    ></a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+       end color quick setting -->
+    <!-- start page container -->
+    <div class="page-container">
+      <!-- start sidebar menu -->
+      <div class="sidebar-container">
+        <div class="sidemenu-container navbar-collapse collapse fixed-menu">
+          <div id="remove-scroll" class="left-sidemenu">
+            <ul class="sidemenu page-header-fixed slimscroll-style" data-keep-expanded="false" data-auto-scroll="true"
+              data-slide-speed="200" style="padding-top: 20px">
+              <li class="sidebar-toggler-wrapper hide">
+                <div class="sidebar-toggler">
+                  <span></span>
+                </div>
+              </li>
+              <li class="sidebar-user-panel">
+                <div class="user-panel">
+                  <div class="pull-left image">
+                    <img src="https://www.exprimiendolinkedin.com/wp-content/uploads/2017/12/Laura-150x150.jpg"
+                      class="img-circle user-img-circle" alt="User Image" />
+                  </div>
+                  <div class="pull-left info">
+                    <p>Renata Abarca</p>
+                    <a href="#"><i class="fa fa-circle user-online"></i><span class="txtOnline"> conectado</span></a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link nav-toggle">
+                  <i class="material-icons">school</i>
+                  <span class="title">Mis Cursos</span>
+                  <span class="arrow"></span>
+                </a>
+                <ul class="sub-menu">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <span class="title">Matemática</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <span class="title">Geometría 3d</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <span class="title">Biología</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <span class="title">Historia</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <span class="title">Lenguaje</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link nav-toggle">
+                  <i class="material-icons">description</i>
+                  <span class="title">Comunidad Escolar</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- end sidebar menu -->
+      <!-- start page content -->
+      <div class="page-content-wrapper">
+        <div class="page-content">
+          <div class="page-bar">
+            <div class="page-title-breadcrumb">
+              <div class="pull-left">
+                <div class="page-title">
+                  Escritorio del Alumno
+                </div>
+              </div>
+              <ol class="breadcrumb page-breadcrumb pull-right">
+                <li>
+                  <i class="fa fa-home"></i>&nbsp;<a class="parent-item" href="index.html">Inicio</a>&nbsp;<i
+                    class="fa fa-angle-right"></i>
+                </li>
+                <li>
+                  <a class="parent-item" href="">Cursos</a>&nbsp;<i class="fa fa-angle-right"></i>
+                </li>
+                <li class="active">Gestión Curso</li>
+              </ol>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <!-- BEGIN PROFILE SIDEBAR -->
+              <div class="profile-sidebar">
+                <div class="card">
+                  <div class="card-body no-padding height-9">
+                    <div class="row">
+                      <div class="profile-userpic">
+                        <img
+                          src="data:image/jpeg;base64,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"
+                          class="img-responsive" alt="" />
+                      </div>
+                    </div>
+                    <div class="profile-usertitle">
+                      <div class="profile-usertitle-name">Andres Niemann</div>
+                      <div class="profile-usertitle-job">Profesor Jefe</div>
+                    </div>
+                    <ul class="list-group list-group-unbordered">
+                      <li class="list-group-item">
+                        <b>Teléfono</b> <a class="pull-right">+569 886 4578</a>
+                      </li>
+                      <li class="list-group-item">
+                        <b>E-mail</b> <a class="pull-right">aniemann@gmail.com</a>
+                      </li>
+                    </ul>
+                    <!-- END SIDEBAR USER TITLE -->
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-head">
+                    <header>Acerca de Renata</header>
+                  </div>
+                  <div class="card-body no-padding height-9">
+                    <div class="profile-desc">
+                      Se destaca por su participación en las áreas de deporte.
+                    </div>
+                    <ul class="list-group list-group-unbordered">
+                      <li class="list-group-item">
+                        <b>Grado </b>
+                        <div class="profile-desc-item pull-right"> Séptimo</div>
+                      </li>
+                      <li class="list-group-item">
+                        <b>CAMPUR </b>
+                        <div class="profile-desc-item pull-right">Coordinación</div>
+                      </li>
+                    </ul>
+                    <div class="row list-separated profile-stat">
+                      <div class="col-md-4 col-sm-4 col-6">
+                        <div class="uppercase profile-stat-title">C</div>
+                        <div class="uppercase profile-stat-text">
+                          CAMPUR
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-sm-4 col-6">
+                        <div class="uppercase profile-stat-title">3</div>
+                        <div class="uppercase profile-stat-text">Anotaciones</div>
+                      </div>
+                      <div class="col-md-4 col-sm-4 col-6">
+                        <div class="uppercase profile-stat-title">90%</div>
+                        <div class="uppercase profile-stat-text">Asistencia</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- END BEGIN PROFILE SIDEBAR -->
+              <!-- BEGIN PROFILE CONTENT -->
+              <div class="profile-content">
+                <div class="row">
+                  <div class="card">
+                    <div class="card-topline-aqua">
+                      <header></header>
+                    </div>
+                    <div class="white-box">
+                      <!-- Nav tabs -->
+                      <div class="p-rl-20">
+                        <ul class="nav customtab nav-tabs" role="tablist">
+                          <li class="nav-item">
+                            <a href="#tab1" class="nav-link active" data-bs-toggle="tab">Informe de Notas</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="#tab2" class="nav-link" data-bs-toggle="tab">Calendario</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="#tab3" class="nav-link" data-bs-toggle="tab">Anotaciones</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="#tab4" class="nav-link" data-bs-toggle="tab">Muro del Curso</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="#tab5" class="nav-link" data-bs-toggle="tab">Evaluaciones <span
+                                class="label mail-label pull-right" style="margin-left: 10px;"> 1 pendiente</span></a>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- Tab panes -->
+                      <div class="tab-content">
+                        <div class="tab-pane active fontawesome-demo" id="tab1">
+                          <div id="asistencia">
+                            <div class="inbox-body no-pad table-responsive">
+                              <table class="table table-inbox table-hover btn-sweetalert">
+                                <thead>
+                                  <tr>
+                                    <th>Nombre</th>
+                                    <th><span class="mdl-badge" data-badge="N1"></th>
+                                    <th><span class="mdl-badge" data-badge="N2"></span></th>
+                                    <th><span class="mdl-badge" data-badge="N3"></th>
+                                    <th><span class="mdl-badge" data-badge="PR"></th>
+                                    <th></th>
+                                    <th></th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr class="unread">
+                                    <td class="view-message">
+                                      <a href="#"> 1 - Matemática / Mathematics</a>
+                                    </td>
+                                    <td class="inbox-small-cells">
+                                      <button type="button"
+                                        class=" mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect m-b-10 btn-circle btn-primary"
+                                        data-type="showDialogNota1"> 5,2 </button>
+                                    </td>
+                                    <td class="inbox-small-cells">
+                                      <button type="button"
+                                        class=" mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect m-b-10 btn-circle btn-warning"
+                                        data-type="showDialogNota2"> P </button>
+                                    </td>
+                                    <td class="inbox-small-cells">
+                                      <button type="button"
+                                        class=" mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect m-b-10 btn-circle btn-primary"
+                                        data-type="showDialogNota3"> 6,0 </button>
+                                    </td>
+                                    <td class="inbox-small-cells">
+                                      5,9
+                                    </td>
+                                  </tr>
+                                  <tr class="unread">
+                                    <td class="view-message">
+                                      <a href="#"> 2 - Educación Física</a>
+                                    </td>
+                                    <td class="inbox-small-cells">
+                                      3,2
+                                    </td>
+                                    <td class="inbox-small-cells">
+                                      5,7
+                                    </td>
+                                    <td class="inbox-small-cells">
+                                      6,3
+                                    </td>
+                                    <td class="inbox-small-cells">
+                                      5,0
+                                    </td>
+                                  </tr>
+                                  <tr class="unread">
+                                    <td class="view-message">
+                                      <a href="#"> 3 - Biología</a>
+                                    </td>
+                                    <td class="inbox-small-cells">
+                                      6,2
+                                    </td>
+                                    <td class="inbox-small-cells">
+                                      7,0
+                                    </td>
+                                    <td class="inbox-small-cells">
+                                      4,0
+                                    </td>
+                                    <td class="inbox-small-cells">
+                                      5,7
+                                    </td>
+                                  </tr>
+                                  <tr class="unread">
+                                    <td class="view-message">
+                                      <a href="#"> 4 - História</a>
+                                    </td>
+                                    <td class="inbox-small-cells">
+                                      5,5
+                                    </td>
+                                    <td class="inbox-small-cells">
+                                      6,0
+                                    </td>
+                                    <td class="inbox-small-cells">
+                                      6,0
+                                    </td>
+                                    <td class="inbox-small-cells">
+                                      5,5
+                                    </td>
+                                  </tr>
+                                  <tr class="unread">
+                                    <td class="view-message">
+                                      <a href="#"> 5 - Lenguaje</a>
+                                    </td>
+                                    <td class="inbox-small-cells">
+                                      4,2
+                                    </td>
+                                    <td class="inbox-small-cells">
+                                      3,7
+                                    </td>
+                                    <td class="inbox-small-cells">
+                                      5,0
+                                    </td>
+                                    <td class="inbox-small-cells">
+                                      4,3
+                                    </td>
+                                  </tr>
+                                  <tr class="unread">
+                                    <td class="view-message">
+                                      <a href="#"> 6 - tecnología</a>
+                                    </td>
+                                    <td class="inbox-small-cells">
+                                      6,8
+                                    </td>
+                                    <td class="inbox-small-cells">
+                                      7,0
+                                    </td>
+                                    <td class="inbox-small-cells">
+                                      7,0
+                                    </td>
+                                    <td class="inbox-small-cells">
+                                      6,9
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tab-pane" id="tab2">
+                          <div class="inbox-body no-pad table-responsive">
+                            <table class="table table-inbox table-hover">
+                              <tbody>
+                                <tr class="unread">
+                                  <td class="inbox-small-cells">
+                                    <div class="todo-check pull-left">
+                                      <input type="checkbox" value="None" id="todo-check3">
+                                      <label for="todo-check3"></label>
+                                    </div>
+                                  </td>
+                                  <td class="inbox-small-cells"><i class="fa fa-star"></i>
+                                  </td>
+                                  <td>
+                                    <a href="#" class="avatar">
+                                      <span class="bg-success">A</span>
+                                    </a>
+                                  </td>
+                                  <td class="view-message dont-show">Biología <span
+                                      class="label mail-label pull-right">Online</span>
+                                  </td>
+                                  <td class="view-message"><a href="email_compose.html"> Evaluación parcial - Unidad
+                                      3</a></td>
+                                  <td class="view-message inbox-small-cells"></td>
+                                  <td class="view-message text-right">oct 11</td>
+                                </tr>
+                                <tr>
+                                  <td class="inbox-small-cells">
+                                    <div class="todo-check pull-left">
+                                      <input type="checkbox" value="None" id="todo-check5">
+                                      <label for="todo-check5"></label>
+                                    </div>
+                                  </td>
+                                  <td class="inbox-small-cells"><i class="fa fa-star inbox-started"></i>
+                                  </td>
+                                  <td>
+                                    <a href="#" class="avatar">
+                                      <span class="bg-primary">C</span>
+                                    </a>
+                                  </td>
+                                  <td class="view-message dont-show">Geometría 3d <span
+                                      class="label mail-label pull-right">Presencial</span>
+                                  </td>
+                                  <td class="view-message"><a href="email_compose.html">Figuras Geométricas</a></td>
+                                  <td class="view-message inbox-small-cells"></td>
+                                  <td class="view-message text-right">oct 23</td>
+                                </tr>
+                                <tr>
+                                  <td class="inbox-small-cells">
+                                    <div class="todo-check pull-left">
+                                      <input type="checkbox" value="None" id="todo-check7">
+                                      <label for="todo-check7"></label>
+                                    </div>
+                                  </td>
+                                  <td class="inbox-small-cells"><i class="fa fa-star inbox-started"></i>
+                                  </td>
+                                  <td>
+                                    <a href="#" class="avatar">
+                                      <span class="bg-warning">P</span>
+                                    </a>
+                                  </td>
+                                  <td class="view-message dont-show">Matemática / Mathematics <span
+                                      class="label mail-label pull-right">Presencial</span></td>
+                                  <td class="view-message"><a href="email_compose.html">Ecuaciones</a></td>
+                                  <td class="view-message inbox-small-cells"><i class="fa fa-paperclip"></i>
+                                  </td>
+                                  <td class="view-message text-right">oct 26</td>
+                                </tr>
+                                <tr>
+                                  <td class="inbox-small-cells">
+                                    <div class="todo-check pull-left">
+                                      <input type="checkbox" value="None" id="todo-check7">
+                                      <label for="todo-check7"></label>
+                                    </div>
+                                  </td>
+                                  <td class="inbox-small-cells"><i class="fa fa-star inbox-started"></i>
+                                  </td>
+                                  <td>
+                                    <a href="#" class="avatar">
+                                      <span class="bg-warning">H</span>
+                                    </a>
+                                  </td>
+                                  <td class="view-message dont-show">Dia del profesor <span
+                                      class="label mail-label pull-right">Extraprogramatica</span></td>
+                                  <td class="view-message"><a href="email_compose.html">Celebración </a></td>
+                                  <td class="view-message inbox-small-cells"><i class="fa fa-paperclip"></i>
+                                  </td>
+                                  <td class="view-message text-right">oct 26</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                        <div class="tab-pane" id="tab3">
+                          <div class="offset-lg-1 col-md-8" style="margin-top: 30px;">
+                            <span class="label mail-label pull-right">01 Abril 2021 - PARTICIPACIÓN DESTACADA</span>
+                            <div class="borderBox light bordered">
+                              <p class="lead">Pellentesque habitant morbi tristique senectus et netus et malesuada
+                                fames ac turpis egestas.
+                                Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</p>
+                              <p>Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris
+                                placerat eleifend leo.
+                                Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi,
+                                condimentum sed, commodo vitae,
+                                ornare sit amet, wisi.</p>
+                            </div>
+                          </div>
+                          <div class="offset-lg-1 col-md-8">
+                            <span class="label mail-label pull-right">15 julio 2021 - PARTICIPACIÓN DESTACADA</span>
+                            <div class="borderBox light bordered">
+                              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada
+                                <mark>fames ac turpis egestas</mark> libero sit amet quam egestas semper. Aenean
+                                ultricies mi.</p>
+                              <p>
+                                <mark>Duis mollis, est non commodo luctus</mark>, nisi erat porttitor ligula, eget
+                                lacinia odio sem nec elit.
+                                <br> This line of text is meant to be treated as fine print.
+                              </p>
+                            </div>
+                          </div>
+                          <div class="offset-lg-1 col-md-8">
+                            <span class="label mail-label pull-right">22 septiembre 2021 - PARTICIPACIÓN
+                              DESTACADA</span>
+                            <div class="borderBox light bordered">
+                              <p class="lead">Pellentesque habitant morbi tristique senectus et netus et malesuada
+                                fames ac turpis egestas.
+                                Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</p>
+                              <p>Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris
+                                placerat eleifend leo.
+                                Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi,
+                                condimentum sed, commodo vitae,
+                                ornare sit amet, wisi.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tab-pane" id="tab4">
+                          <div class="row">
+                            <div class="col-lg-6 p-t-20">
+                              <!-- Select with arrow-->
+                              <div class="
+                                    mdl-textfield mdl-js-textfield
+                                    mdl-textfield--floating-label
+                                    getmdl-select getmdl-select__fix-height
+                                    select-width
+                                  ">
+                                <input class="mdl-textfield__input" type="text" id="sample2" value="MATEMÁTICA" readonly
+                                  tabindex="-1" />
+                                <label for="sample2" class="pull-right margin-0">
+                                  <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+                                </label>
+                                <label for="sample2" class="mdl-textfield__label">Country</label>
+                                <ul data-mdl-for="sample2" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                                  <li class="mdl-menu__item" data-val="DE">
+                                    GEOMETRÍA 3D
+                                  </li>
+                                  <li class="mdl-menu__item" data-val="BY">MATEMÁTICA</li>
+                                  <li class="mdl-menu__item" data-val="RU">LENGUAJE</li>
+                                  <li class="mdl-menu__item" data-val="RU">BIOLOGIA</li>
+                                  <li class="mdl-menu__item" data-val="RU">HISTORIA</li>
+                                  <li class="mdl-menu__item" data-val="RU">TECNOLOGÍA</li>
+                                </ul>
+                              </div>
+                            </div>
+
+                          </div>
+                          <div class="container-fluid">
+                            <div class="row">
+                              <div class="full-width p-rl-20">
+                                <div class="panel">
+                                  <form>
+                                    <textarea class="form-control p-text-area" rows="4"
+                                      placeholder="¿Qué deseas publicar hoy?"></textarea>
+                                  </form>
+                                  <footer class="panel-footer">
+                                    <button class="btn btn-post pull-right">
+                                      Publicar
+                                    </button>
+                                    <ul class="nav nav-pills p-option">
+                                      <li>
+                                        <a href="#"><i class="fa fa-user"></i></a>
+                                      </li>
+                                      <li>
+                                        <a href="#"><i class="fa fa-camera"></i></a>
+                                      </li>
+                                      <li>
+                                        <a href="#"><i class="fa fa-location-arrow"></i></a>
+                                      </li>
+                                      <li>
+                                        <a href="#"><i class="fa fa-meh-o"></i></a>
+                                      </li>
+                                    </ul>
+                                  </footer>
+                                </div>
+                              </div>
+                              <div class="full-width p-rl-20">
+                                <ul class="activity-list">
+                                  <li>
+                                    <div class="avatar">
+                                      <img src="assets/img/std/std1.jpg" alt="">
+                                    </div>
+                                    <div class="activity-desk">
+                                      <h5>
+                                        <a href="#">Andrés Niemann</a>
+                                        <span>Subio 3 imagenes</span>
+                                      </h5>
+                                      <p class="text-muted">
+                                        hace 7 minutos
+                                      </p>
+                                      <div class="album">
+                                        <a href="#">
+                                          <img alt="" src="assets/img/ejercicio/e1.png">
+                                        </a>
+                                        <a href="#">
+                                          <img alt="" src="assets/img/ejercicio/e2.png">
+                                        </a>
+                                        <a href="#">
+                                          <img alt="" src="assets/img/ejercicio/e3.png">
+                                        </a>
+                                      </div>
+                                    </div>
+                                    <p class="text-muted">
+                                      <span class="label mail-label pull-right">Plazo restante: 5 días</span>
+                                      <br />
+                                      <button class="btn btn-post pull-right">Publicar</button>
+                                    </p>
+                                  </li>
+                                  <li>
+                                    <div class="avatar">
+                                      <img src="assets/img/std/std3.jpg" alt="">
+                                    </div>
+                                    <div class="activity-desk">
+                                      <h5>
+                                        <a href="#">Andrés Niemann</a>
+                                        <span>Queridos alumnos, recuerden repasar la unidad de algebra. aca les dejo el
+                                          link al libro</span>
+                                        <a href="http://etm2021.com/sbiblioteca/Libros/MATERIAS%20BASICAS/ALGEBRA%20-%20Baldor.pdf"
+                                          target="_blank">ALGEBRA - Baldor</a>
+                                      </h5>
+                                      <p class="text-muted">
+                                        hace 2 días
+                                      </p>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <div class="avatar">
+                                      <img src="assets/img/std/std4.jpg" alt="">
+                                    </div>
+                                    <div class="activity-desk">
+                                      <h5>
+                                        <a href="#">Andrés Niemann</a>
+                                        <span>Estiamdos alumnos, les comparto el link para nuestra clase de esta semana:
+                                          <a href="https://teams.microsoft.com/l/meetup-join/19%3ameeting_MzM1MWJiMzMtOTNmYy00NDA1LWE4YmUtYTJjMWZlNDAwMGVm%40thread.v2/0?context=%7b%22Tid%22%3a%2206d2dc82-6fed-4d3b-9218-37d34fb0405b%22%2c%22Oid%22%3a%22da8e3ef7-e711-46e9-99b0-a851bd2199f4%22%7d"
+                                            target="_blank">https://teams.microsoft.com/l/meetup-join...</a> </span>
+                                      </h5>
+                                      <p class="text-muted">
+                                        hace 4 días
+                                      </p>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <div class="avatar">
+                                      <img src="assets/img/std/std5.jpg" alt="">
+                                    </div>
+                                    <div class="activity-desk">
+                                      <h5>
+                                        <a href="#">Andrés Niemann</a>
+                                        <span>Material de la clase del 05-10-1978</span>
+                                      </h5>
+                                      <p class="text-muted">
+                                        hace 6 días
+                                      </p>
+                                    </div>
+                                  </li>
+                                </ul>
+                                <div class="post-box">
+                                  <span class="text-muted text-small"><i class="fa fa-clock-o" aria-hidden="true"></i>
+                                    hace 6 días</span>
+                                  <div class="post-img">
+                                    <img src="assets/img/ejercicio/e4.png" class="img-responsive" alt="">
+                                  </div>
+                                  <div>
+                                    <h4 class="">
+                                      Ejercicios de la materia vista en clase
+                                    </h4>
+                                    <p>
+                                      Recuerden usar las formulas vistas en clase para que no se confundan.
+                                    </p>
+                                    <p>
+                                      <a href="" class="btn btn-raised btn-info btn-sm"><i class="fa fa-heart-o"
+                                          aria-hidden="true"></i>
+                                        Like (5)
+                                      </a>
+                                      <a href="" class="
+                                            btn btn-raised
+                                            bg-soundcloud
+                                            btn-sm
+                                          "><i class="zmdi zmdi-long-arrow-return"></i>
+                                        responder</a>
+                                    </p>
+                                  </div>
+                                </div>
+                                <div class="post-box">
+                                  <span class="text-muted text-small"><i class="fa fa-clock-o" aria-hidden="true"></i>
+                                    hace 6 días y 4 horas</span>
+                                  <div class="post-img">
+                                    <img src="assets/img/ejercicio/e5.png" class="img-responsive" alt="">
+                                  </div>
+                                  <div>
+                                    <h4 class="">
+                                      Ejercicios de repaso
+                                    </h4>
+                                    <p>
+                                      Estos ejercicios son tipo para los proximos contoles. repasen y ejerciten!
+                                    </p>
+                                    <p>
+                                      <a href="" class="btn btn-raised btn-info btn-sm"><i class="fa fa-heart-o"
+                                          aria-hidden="true"></i>
+                                        Like (5)
+                                      </a>
+                                      <a href="" class="
+                                            btn btn-raised
+                                            bg-soundcloud
+                                            btn-sm
+                                          "><i class="zmdi zmdi-long-arrow-return"></i>
+                                        Reply</a>
+                                    </p>
+                                  </div>
+                                </div>
+                                <div class="post-box">
+                                  <span class="text-muted text-small"><i class="fa fa-clock-o" aria-hidden="true"></i>
+                                    hace 6 días y 2 horas</span>
+                                  <div class="post-img">
+                                    <img src="assets/img/ejercicio/e6.png" class="img-responsive" alt="">
+                                  </div>
+                                  <div>
+                                    <h4 class="">
+                                      Caso de prueba
+                                    </h4>
+                                    <p>
+                                      Este es el caso que vimos en la clase y que les servirá para estudiar.
+                                    </p>
+                                    <p>
+                                      <a href="" class="btn btn-raised btn-info btn-sm"><i class="fa fa-heart-o"
+                                          aria-hidden="true"></i>
+                                        Like (5)
+                                      </a>
+                                      <a href="" class="
+                                            btn btn-raised
+                                            bg-soundcloud
+                                            btn-sm
+                                          "><i class="zmdi zmdi-long-arrow-return"></i>
+                                        responder</a>
+                                    </p>
+                                  </div>
+                                </div>
+                                <div class="col-lg-12 p-t-20 text-center">
+                                  <button type="button" class="
+                                        mdl-button mdl-js-button
+                                        mdl-button--raised
+                                        mdl-js-ripple-effect
+                                        m-b-10
+                                        btn-info
+                                      " data-upgraded=",MaterialButton,MaterialRipple">
+                                    ver mas...
+                                    <span class="mdl-button__ripple-container"><span
+                                        class="mdl-ripple"></span></span></button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tab-pane" id="tab5">
+                          <p></p>
+                          <div class="row">
+                            <div class="col-xl-3 col-md-6 col-12">
+                              <div class="info-box bg-blue" style="cursor: pointer;"
+                                onclick="window.open('https://forms.office.com/r/DQ2Fa8RngS')">
+                                <span class="info-box-icon push-bottom"><i class="material-icons">group</i></span>
+                                <div class="info-box-content">
+                                  <span class="info-box-text">[Matemática]</span>
+                                  <span class="info-box-number">Parcial 1</span>
+                                  <div class="progress">
+                                    <div class="progress-bar" style="width: 45%"></div>
+                                  </div>
+                                  <span class="progress-description">
+                                    45% curso completado
+                                  </span>
+                                </div>
+                                <!-- /.info-box-content -->
+                              </div>
+                              <!-- /.info-box -->
+                            </div>
+                            <!-- /.col -->
+                            <div class="col-xl-3 col-md-6 col-12">
+                              <div class="info-box bg-orange">
+                                <span class="info-box-icon push-bottom"><i class="material-icons">person</i></span>
+                                <div class="info-box-content">
+                                  <span class="info-box-text">[Historia]</span>
+                                  <span class="info-box-number">Acumulativa</span>
+                                  <div class="progress">
+                                    <div class="progress-bar" style="width: 40%"></div>
+                                  </div>
+                                  <span class="progress-description">
+                                    100% entregada
+                                  </span>
+                                </div>
+                                <!-- /.info-box-content -->
+                              </div>
+                              <!-- /.info-box -->
+                            </div>
+                            <!-- /.col -->
+                            <div class="col-xl-3 col-md-6 col-12">
+                              <div class="info-box bg-purple">
+                                <span class="info-box-icon push-bottom"><i class="material-icons">group</i></span>
+                                <div class="info-box-content">
+                                  <span class="info-box-text">[Lenguaje]</span>
+                                  <span class="info-box-number">Control</span>
+                                  <div class="progress">
+                                    <div class="progress-bar" style="width: 85%"></div>
+                                  </div>
+                                  <span class="progress-description">
+                                    85% curso completado
+                                  </span>
+                                </div>
+                                <!-- /.info-box-content -->
+                              </div>
+                              <!-- /.info-box -->
+                            </div>
+                            <!-- /.col -->
+                            <div class="col-xl-3 col-md-6 col-12">
+                              <div class="info-box bg-success">
+                                <span class="info-box-icon push-bottom"><i class="material-icons">person</i></span>
+                                <div class="info-box-content">
+                                  <span class="info-box-text">[Tecnología]</span>
+                                  <span class="info-box-number">Acumulativa</span>
+                                  <div class="progress">
+                                    <div class="progress-bar" style="width: 50%"></div>
+                                  </div>
+                                  <span class="progress-description">
+                                    100% Entregada
+                                  </span>
+                                </div>
+                                <!-- /.info-box-content -->
+                              </div>
+                              <!-- /.info-box -->
+                            </div>
+                            <!-- /.col -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- END PROFILE CONTENT -->
+            </div>
+          </div>
+        </div>
+        <!-- end page content -->
+        <!-- start chat sidebar -->
+        <div class="chat-sidebar-container" data-close-on-body-click="false">
+          <div class="chat-sidebar">
+            <ul class="nav nav-tabs">
+              <li class="nav-item">
+                <a href="#quick_sidebar_tab_1" class="nav-link active tab-icon" data-bs-toggle="tab">
+                  <i class="material-icons">chat</i>Chat
+                  <span class="badge badge-danger">4</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#quick_sidebar_tab_3" class="nav-link tab-icon" data-bs-toggle="tab">
+                  <i class="material-icons">settings</i>
+                  Settings
+                </a>
+              </li>
+            </ul>
+            <div class="tab-content">
+              <!-- Start User Chat -->
+              <div class="tab-pane active chat-sidebar-chat in active show" role="tabpanel" id="quick_sidebar_tab_1">
+                <div class="chat-sidebar-list">
+                  <div class="chat-sidebar-chat-users slimscroll-style" data-rail-color="#ddd"
+                    data-wrapper-class="chat-sidebar-list">
+                    <div class="chat-header">
+                      <h5 class="list-heading">Online</h5>
+                    </div>
+                    <ul class="media-list list-items">
+                      <li class="media">
+                        <img class="media-object" src="assets/img/prof/prof3.jpg" width="35" height="35" alt="..." />
+                        <i class="online dot"></i>
+                        <div class="media-body">
+                          <h5 class="media-heading">John Deo</h5>
+                          <div class="media-heading-sub">Spine Surgeon</div>
+                        </div>
+                      </li>
+                      <li class="media">
+                        <div class="media-status">
+                          <span class="badge badge-success">5</span>
+                        </div>
+                        <img class="media-object" src="assets/img/prof/prof1.jpg" width="35" height="35" alt="..." />
+                        <i class="busy dot"></i>
+                        <div class="media-body">
+                          <h5 class="media-heading">Rajesh</h5>
+                          <div class="media-heading-sub">Director</div>
+                        </div>
+                      </li>
+                      <li class="media">
+                        <img class="media-object" src="assets/img/prof/prof5.jpg" width="35" height="35" alt="..." />
+                        <i class="away dot"></i>
+                        <div class="media-body">
+                          <h5 class="media-heading">Jacob Ryan</h5>
+                          <div class="media-heading-sub">Ortho Surgeon</div>
+                        </div>
+                      </li>
+                      <li class="media">
+                        <div class="media-status">
+                          <span class="badge badge-danger">8</span>
+                        </div>
+                        <img class="media-object" src="assets/img/prof/prof4.jpg" width="35" height="35" alt="..." />
+                        <i class="online dot"></i>
+                        <div class="media-body">
+                          <h5 class="media-heading">Kehn Anderson</h5>
+                          <div class="media-heading-sub">CEO</div>
+                        </div>
+                      </li>
+                      <li class="media">
+                        <img class="media-object" src="assets/img/prof/prof2.jpg" width="35" height="35" alt="..." />
+                        <i class="busy dot"></i>
+                        <div class="media-body">
+                          <h5 class="media-heading">Sarah Smith</h5>
+                          <div class="media-heading-sub">Anaesthetics</div>
+                        </div>
+                      </li>
+                      <li class="media">
+                        <img class="media-object" src="assets/img/prof/prof7.jpg" width="35" height="35" alt="..." />
+                        <i class="online dot"></i>
+                        <div class="media-body">
+                          <h5 class="media-heading">Vlad Cardella</h5>
+                          <div class="media-heading-sub">Cardiologist</div>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="chat-header">
+                      <h5 class="list-heading">Offline</h5>
+                    </div>
+                    <ul class="media-list list-items">
+                      <li class="media">
+                        <div class="media-status">
+                          <span class="badge badge-warning">4</span>
+                        </div>
+                        <img class="media-object" src="assets/img/prof/prof6.jpg" width="35" height="35" alt="..." />
+                        <i class="offline dot"></i>
+                        <div class="media-body">
+                          <h5 class="media-heading">Jennifer Maklen</h5>
+                          <div class="media-heading-sub">Nurse</div>
+                          <div class="media-heading-small">
+                            Last seen 01:20 AM
+                          </div>
+                        </div>
+                      </li>
+                      <li class="media">
+                        <img class="media-object" src="assets/img/prof/prof8.jpg" width="35" height="35" alt="..." />
+                        <i class="offline dot"></i>
+                        <div class="media-body">
+                          <h5 class="media-heading">Lina Smith</h5>
+                          <div class="media-heading-sub">Ortho Surgeon</div>
+                          <div class="media-heading-small">
+                            Last seen 11:14 PM
+                          </div>
+                        </div>
+                      </li>
+                      <li class="media">
+                        <div class="media-status">
+                          <span class="badge badge-success">9</span>
+                        </div>
+                        <img class="media-object" src="assets/img/prof/prof9.jpg" width="35" height="35" alt="..." />
+                        <i class="offline dot"></i>
+                        <div class="media-body">
+                          <h5 class="media-heading">Jeff Adam</h5>
+                          <div class="media-heading-sub">Compounder</div>
+                          <div class="media-heading-small">
+                            Last seen 3:31 PM
+                          </div>
+                        </div>
+                      </li>
+                      <li class="media">
+                        <img class="media-object" src="assets/img/prof/prof10.jpg" width="35" height="35" alt="..." />
+                        <i class="offline dot"></i>
+                        <div class="media-body">
+                          <h5 class="media-heading">Anjelina Cardella</h5>
+                          <div class="media-heading-sub">Physiotherapist</div>
+                          <div class="media-heading-small">
+                            Last seen 7:45 PM
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- End User Chat -->
+              <!-- Start Setting Panel -->
+              <div class="tab-pane chat-sidebar-settings" role="tabpanel" id="quick_sidebar_tab_3">
+                <div class="chat-sidebar-settings-list slimscroll-style">
+                  <div class="chat-header">
+                    <h5 class="list-heading">Layout Settings</h5>
+                  </div>
+                  <div class="chatpane inner-content">
+                    <div class="settings-list">
+                      <div class="setting-item">
+                        <div class="setting-text">Sidebar Position</div>
+                        <div class="setting-set">
+                          <select class="
+                                sidebar-pos-option
+                                form-control
+                                input-inline input-sm input-small
+                              ">
+                            <option value="left" selected="selected">
+                              Left
+                            </option>
+                            <option value="right">Right</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="setting-item">
+                        <div class="setting-text">Header</div>
+                        <div class="setting-set">
+                          <select class="
+                                page-header-option
+                                form-control
+                                input-inline input-sm input-small
+                              ">
+                            <option value="fixed" selected="selected">
+                              Fixed
+                            </option>
+                            <option value="default">Default</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="setting-item">
+                        <div class="setting-text">Footer</div>
+                        <div class="setting-set">
+                          <select class="
+                                page-footer-option
+                                form-control
+                                input-inline input-sm input-small
+                              ">
+                            <option value="fixed">Fixed</option>
+                            <option value="default" selected="selected">
+                              Default
+                            </option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat-header">
+                      <h5 class="list-heading">Account Settings</h5>
+                    </div>
+                    <div class="settings-list">
+                      <div class="setting-item">
+                        <div class="setting-text">Notifications</div>
+                        <div class="setting-set">
+                          <div class="switch">
+                            <label class="
+                                  mdl-switch mdl-js-switch mdl-js-ripple-effect
+                                " for="switch-1">
+                              <input type="checkbox" id="switch-1" class="mdl-switch__input" checked />
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="setting-item">
+                        <div class="setting-text">Show Online</div>
+                        <div class="setting-set">
+                          <div class="switch">
+                            <label class="
+                                  mdl-switch mdl-js-switch mdl-js-ripple-effect
+                                " for="switch-7">
+                              <input type="checkbox" id="switch-7" class="mdl-switch__input" checked />
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="setting-item">
+                        <div class="setting-text">Status</div>
+                        <div class="setting-set">
+                          <div class="switch">
+                            <label class="
+                                  mdl-switch mdl-js-switch mdl-js-ripple-effect
+                                " for="switch-2">
+                              <input type="checkbox" id="switch-2" class="mdl-switch__input" checked />
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="setting-item">
+                        <div class="setting-text">2 Steps Verification</div>
+                        <div class="setting-set">
+                          <div class="switch">
+                            <label class="
+                                  mdl-switch mdl-js-switch mdl-js-ripple-effect
+                                " for="switch-3">
+                              <input type="checkbox" id="switch-3" class="mdl-switch__input" checked />
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat-header">
+                      <h5 class="list-heading">General Settings</h5>
+                    </div>
+                    <div class="settings-list">
+                      <div class="setting-item">
+                        <div class="setting-text">Location</div>
+                        <div class="setting-set">
+                          <div class="switch">
+                            <label class="
+                                  mdl-switch mdl-js-switch mdl-js-ripple-effect
+                                " for="switch-4">
+                              <input type="checkbox" id="switch-4" class="mdl-switch__input" checked />
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="setting-item">
+                        <div class="setting-text">Save Histry</div>
+                        <div class="setting-set">
+                          <div class="switch">
+                            <label class="
+                                  mdl-switch mdl-js-switch mdl-js-ripple-effect
+                                " for="switch-5">
+                              <input type="checkbox" id="switch-5" class="mdl-switch__input" checked />
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="setting-item">
+                        <div class="setting-text">Auto Updates</div>
+                        <div class="setting-set">
+                          <div class="switch">
+                            <label class="
+                                  mdl-switch mdl-js-switch mdl-js-ripple-effect
+                                " for="switch-6">
+                              <input type="checkbox" id="switch-6" class="mdl-switch__input" checked />
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end chat sidebar -->
+      </div>
+      <!-- end page container -->
+      <!-- start footer -->
+      <div class="page-footer">
+        <div class="page-footer-inner">
+          2021 &copy; Educando
+          <a href="mailto:ricardo@pulxos.com" target="_top" class="makerCss">Pulxos.com</a>
+        </div>
+        <div class="scroll-to-top">
+          <i class="icon-arrow-up"></i>
+        </div>
+      </div>
+      <!-- end footer -->
+    </div>
+  </div>
+  <!-- start js include path -->
+  <script src="assets/plugins/jquery/jquery.min.js"></script>
+  <script src="assets/plugins/popper/popper.js"></script>
+  <script src="assets/plugins/jquery-blockui/jquery.blockui.min.js"></script>
+  <script src="assets/plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+  <!-- bootstrap -->
+  <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+  <!-- Common js-->
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/layout.js"></script>
+  <script src="assets/js/theme-color.js"></script>
+  <!-- data tables -->
+  <script src="assets/plugins/datatables/jquery.dataTables.min.js"></script>
+  <script src="assets/plugins/datatables/plugins/bootstrap/dataTables.bootstrap4.min.js"></script>
+  <script src="assets/js/pages/table/table_data.js"></script>
+
+
+  <script src="assets/plugins/sweet-alert/sweetalert2.all.min.js"></script>
+  <script src="assets/plugins/sweet-alert/sweetalert2.min.js"></script>
+  <script src="assets/js/pages/sweet-alert/sweet-alert-data.js"></script>
+
+  <!-- Material -->
+  <script src="assets/plugins/material/material.min.js"></script>
+
+  <script src="assets/plugins/flatpicker/js/flatpicker.min.js"></script>
+  <script src="assets/js/pages/date-time/date-time.init.js"></script>
+  <!-- end js include path -->
+
+
+
+
+</body>
+
+</html>
