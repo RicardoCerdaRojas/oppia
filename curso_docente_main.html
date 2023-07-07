@@ -1,0 +1,1688 @@
+<!DOCTYPE html>
+<html lang="es">
+  <!-- BEGIN HEAD -->
+
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta name="description" content="Responsive Admin Template" />
+    <meta name="author" content="SmartUniversity" />
+    <title>Oppia | Plataforma Educativa</title>
+    <!-- google font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- icons -->
+    <link
+      href="fonts/simple-line-icons/simple-line-icons.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="fonts/font-awesome/css/font-awesome.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="fonts/material-design-icons/material-icon.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!--bootstrap -->
+    <link
+      href="assets/plugins/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="assets/plugins/summernote/summernote.css" rel="stylesheet" />
+    <!-- Material Design Lite CSS -->
+    <link rel="stylesheet" href="assets/plugins/material/material.min.css" />
+    <link rel="stylesheet" href="assets/css/material_style.css" />
+    <!-- inbox style -->
+    <link
+      href="assets/css/pages/inbox.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Theme Styles -->
+    <link
+      href="assets/css/theme/light/theme_style.css"
+      rel="stylesheet"
+      id="rt_style_components"
+      type="text/css"
+    />
+    <link href="assets/css/plugins.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="assets/css/theme/light/style.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+    <link
+      href="assets/css/theme/light/theme-color.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/img/favicon.ico" />
+  </head>
+  <!-- END HEAD -->
+
+  <body
+    class="
+      page-header-fixed
+      sidemenu-closed-hidelogo
+      page-content-white page-md
+      header-white
+      white-sidebar-color
+      logo-blue
+    "
+  >
+    <div class="page-wrapper">
+      <!-- start header -->
+      <div class="page-header navbar navbar-fixed-top">
+        <div class="page-header-inner">
+          <!-- logo start -->
+          <div class="page-logo">
+            <a href="index.html">
+              <span class="logo-icon material-icons fa-rotate-45">school</span>
+              <span class="logo-default">Colegio</span>
+            </a>
+          </div>
+          <!-- logo end -->
+          <ul class="nav navbar-nav navbar-left in">
+            <li>
+              <a href="#" class="menu-toggler sidebar-toggler"
+                ><i class="icon-menu"></i
+              ></a>
+            </li>
+          </ul>
+          <form class="search-form-opened" action="#" method="GET">
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Buscar..."
+                name="query"
+              />
+              <span class="input-group-btn">
+                <a href="javascript:;" class="btn submit">
+                  <i class="icon-magnifier"></i>
+                </a>
+              </span>
+            </div>
+          </form>
+          <!-- start mobile menu -->
+          <a
+            class="menu-toggler responsive-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target=".navbar-collapse"
+          >
+            <span></span>
+          </a>
+          <!-- end mobile menu -->
+          <!-- start header menu -->
+          <div class="top-menu">
+            <ul class="nav navbar-nav pull-right">
+              <li>
+                <a class="fullscreen-btn"><i class="fa fa-arrows-alt"></i></a>
+              </li>
+              <!-- start language menu 
+              <li class="dropdown language-switch">
+                <a
+                  class="dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img
+                    src="assets/img/flags/gb.png"
+                    class="position-left"
+                    alt=""
+                  />
+                  Inglés <span class="fa fa-angle-down"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="deutsch"
+                      ><img src="assets/img/flags/de.png" alt="" /> Alemán</a
+                    >
+                  </li>
+                  <li>
+                    <a class="english"
+                      ><img src="assets/img/flags/gb.png" alt="" /> Inglés</a
+                    >
+                  </li>
+                  <li>
+                    <a class="espana"
+                      ><img src="assets/img/flags/es.png" alt="" /> Español</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              end language menu -->
+              <!-- start notification dropdown -->
+              <li
+                class="dropdown dropdown-extended dropdown-notification"
+                id="header_notification_bar"
+              >
+                <a
+                  class="dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  data-hover="dropdown"
+                  data-close-others="true"
+                >
+                  <i class="fa fa-bell-o"></i>
+                  <span class="badge headerBadgeColor1"> 6 </span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="external">
+                    <h3><span class="bold">Notificaciones</span></h3>
+                    <span class="notification-label purple-bgcolor"
+                      >6 nuevas</span
+                    >
+                  </li>
+                  <li>
+                    <ul
+                      class="dropdown-menu-list small-slimscroll-style"
+                      data-handle-color="#637283"
+                    >
+                      <li>
+                        <a href="javascript:;">
+                          <span class="time">ahora</span>
+                          <span class="details">
+                            <span
+                              class="notification-icon circle deepPink-bgcolor"
+                              ><i class="fa fa-check"></i
+                            ></span>
+                            Felicitaciones!.
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:;">
+                          <span class="time">3 mins</span>
+                          <span class="details">
+                            <span
+                              class="notification-icon circle purple-bgcolor"
+                              ><i class="fa fa-user o"></i
+                            ></span>
+                            <b>Carlos Pardo </b>te ha enviado un mensaje.
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:;">
+                          <span class="time">7 mins</span>
+                          <span class="details">
+                            <span class="notification-icon circle blue-bgcolor"
+                              ><i class="fa fa-comments-o"></i
+                            ></span>
+                            <b>Sara Cabrera </b>te ha enviado un mensaje.
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:;">
+                          <span class="time">12 mins</span>
+                          <span class="details">
+                            <span class="notification-icon circle pink"
+                              ><i class="fa fa-heart"></i
+                            ></span>
+                            <b>Claudio Hegel </b>ha visto su calificación.
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:;">
+                          <span class="time">15 mins</span>
+                          <span class="details">
+                            <span class="notification-icon circle yellow"
+                              ><i class="fa fa-warning"></i
+                            ></span>
+                            La prueba #2-Algebra ha sido completada por el 100%
+                            de los alumnos.
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:;">
+                          <span class="time">10 hrs</span>
+                          <span class="details">
+                            <span class="notification-icon circle red"
+                              ><i class="fa fa-times"></i
+                            ></span>
+                            Ha ocurrido un choque de agenda.
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="dropdown-menu-footer">
+                      <a href="javascript:void(0)">
+                        Todas las notificaciones
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <!-- end notification dropdown -->
+              <!-- start message dropdown -->
+              <li
+                class="dropdown dropdown-extended dropdown-inbox"
+                id="header_inbox_bar"
+              >
+                <a
+                  class="dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  data-hover="dropdown"
+                  data-close-others="true"
+                >
+                  <i class="fa fa-envelope-o"></i>
+                  <span class="badge headerBadgeColor2"> 2 </span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="external">
+                    <h3><span class="bold">Mensajes</span></h3>
+                    <span class="notification-label cyan-bgcolor"
+                      >2 nuevos</span
+                    >
+                  </li>
+                  <li>
+                    <ul
+                      class="dropdown-menu-list small-slimscroll-style"
+                      data-handle-color="#637283"
+                    >
+                      <li>
+                        <a href="#">
+                          <span class="photo">
+                            <img
+                              src="assets/img/prof/prof2.jpg"
+                              class="img-circle"
+                              alt=""
+                            />
+                          </span>
+                          <span class="subject">
+                            <span class="from"> Sarah Smith </span>
+                            <span class="time">ahora </span>
+                          </span>
+                          <span class="message">
+                            Invitación a capacitación...
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <span class="photo">
+                            <img
+                              src="assets/img/prof/prof3.jpg"
+                              class="img-circle"
+                              alt=""
+                            />
+                          </span>
+                          <span class="subject">
+                            <span class="from"> claudio Coloma </span>
+                            <span class="time">16 mins </span>
+                          </span>
+                          <span class="message">
+                            Fwd: Actualización planificación...
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <span class="photo">
+                            <img
+                              src="assets/img/prof/prof1.jpg"
+                              class="img-circle"
+                              alt=""
+                            />
+                          </span>
+                          <span class="subject">
+                            <span class="from"> Miguel Farías </span>
+                            <span class="time">2 hrs </span>
+                          </span>
+                          <span class="message">
+                            Coordinación extraprogramática.
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <span class="photo">
+                            <img
+                              src="assets/img/prof/prof8.jpg"
+                              class="img-circle"
+                              alt=""
+                            />
+                          </span>
+                          <span class="subject">
+                            <span class="from"> Laura Smith </span>
+                            <span class="time">40 mins </span>
+                          </span>
+                          <span class="message"> Minuta reunión </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <span class="photo">
+                            <img
+                              src="assets/img/prof/prof5.jpg"
+                              class="img-circle"
+                              alt=""
+                            />
+                          </span>
+                          <span class="subject">
+                            <span class="from"> Jacob Ramirez </span>
+                            <span class="time">46 mins </span>
+                          </span>
+                          <span class="message">
+                            Solicitud de presupuesto.
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="dropdown-menu-footer">
+                      <a href="#"> Todos los mensajes </a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <!-- end message dropdown -->
+              <!-- start manage user dropdown -->
+              <li class="dropdown dropdown-user">
+                <a
+                  class="dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  data-hover="dropdown"
+                  data-close-others="true"
+                >
+                  <img
+                    alt=""
+                    class="img-circle"
+                    src="assets/img/dp.jpg"
+                  />
+                  <span class="username username-hide-on-mobile"> Carlos </span>
+                  <i class="fa fa-angle-down"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-default">
+                  <li>
+                    <a href="user_profile.html">
+                      <i class="icon-user"></i> Perfil
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="icon-settings"></i> Configuración
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"> <i class="icon-directions"></i> Ayuda </a>
+                  </li>
+                  <li class="divider"></li>
+                  <li>
+                    <a href="login.html"> <i class="icon-logout"></i> Salir </a>
+                  </li>
+                </ul>
+              </li>
+              <!-- end manage user dropdown -->
+              <li class="dropdown dropdown-quick-sidebar-toggler">
+                <a
+                  id="headerSettingButton"
+                  class="mdl-button mdl-js-button mdl-button--icon pull-right"
+                  data-upgraded=",MaterialButton"
+                >
+                  <i class="material-icons">more_vert</i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- end header -->
+      <!-- start color quick setting
+      <div class="settingSidebar">
+        <a href="javascript:void(0)" class="settingPanelToggle">
+          <i class="fa fa-spin fa-cog"></i>
+        </a>
+        <div class="settingSidebar-body ps-container ps-theme-default">
+          <div class="fade show active">
+            <div class="setting-panel-header">Setting Panel</div>
+            <div class="quick-setting slimscroll-style">
+              <ul id="themecolors">
+                <li>
+                  <p class="sidebarSettingTitle">Sidebar Color</p>
+                </li>
+                <li class="complete">
+                  <div class="theme-color sidebar-theme">
+                    <a href="#" data-theme="white"
+                      ><span class="head"></span><span class="cont"></span
+                    ></a>
+                    <a href="#" data-theme="dark"
+                      ><span class="head"></span><span class="cont"></span
+                    ></a>
+                    <a href="#" data-theme="blue"
+                      ><span class="head"></span><span class="cont"></span
+                    ></a>
+                    <a href="#" data-theme="indigo"
+                      ><span class="head"></span><span class="cont"></span
+                    ></a>
+                    <a href="#" data-theme="cyan"
+                      ><span class="head"></span><span class="cont"></span
+                    ></a>
+                    <a href="#" data-theme="green"
+                      ><span class="head"></span><span class="cont"></span
+                    ></a>
+                    <a href="#" data-theme="red"
+                      ><span class="head"></span><span class="cont"></span
+                    ></a>
+                  </div>
+                </li>
+                <li>
+                  <p class="sidebarSettingTitle">Header Brand color</p>
+                </li>
+                <li class="theme-option">
+                  <div class="theme-color logo-theme">
+                    <a href="#" data-theme="logo-white"
+                      ><span class="head"></span><span class="cont"></span
+                    ></a>
+                    <a href="#" data-theme="logo-dark"
+                      ><span class="head"></span><span class="cont"></span
+                    ></a>
+                    <a href="#" data-theme="logo-blue"
+                      ><span class="head"></span><span class="cont"></span
+                    ></a>
+                    <a href="#" data-theme="logo-indigo"
+                      ><span class="head"></span><span class="cont"></span
+                    ></a>
+                    <a href="#" data-theme="logo-cyan"
+                      ><span class="head"></span><span class="cont"></span
+                    ></a>
+                    <a href="#" data-theme="logo-green"
+                      ><span class="head"></span><span class="cont"></span
+                    ></a>
+                    <a href="#" data-theme="logo-red"
+                      ><span class="head"></span><span class="cont"></span
+                    ></a>
+                  </div>
+                </li>
+                <li>
+                  <p class="sidebarSettingTitle">Header color</p>
+                </li>
+                <li class="theme-option">
+                  <div class="theme-color header-theme">
+                    <a href="#" data-theme="header-white"
+                      ><span class="head"></span><span class="cont"></span
+                    ></a>
+                    <a href="#" data-theme="header-dark"
+                      ><span class="head"></span><span class="cont"></span
+                    ></a>
+                    <a href="#" data-theme="header-blue"
+                      ><span class="head"></span><span class="cont"></span
+                    ></a>
+                    <a href="#" data-theme="header-indigo"
+                      ><span class="head"></span><span class="cont"></span
+                    ></a>
+                    <a href="#" data-theme="header-cyan"
+                      ><span class="head"></span><span class="cont"></span
+                    ></a>
+                    <a href="#" data-theme="header-green"
+                      ><span class="head"></span><span class="cont"></span
+                    ></a>
+                    <a href="#" data-theme="header-red"
+                      ><span class="head"></span><span class="cont"></span
+                    ></a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+       end color quick setting -->
+      <!-- start page container -->
+      <div class="page-container">
+        <!-- start sidebar menu -->
+        <div class="sidebar-container">
+          <div class="sidemenu-container navbar-collapse collapse fixed-menu">
+            <div id="remove-scroll" class="left-sidemenu">
+              <ul
+                class="sidemenu page-header-fixed slimscroll-style"
+                data-keep-expanded="false"
+                data-auto-scroll="true"
+                data-slide-speed="200"
+                style="padding-top: 20px"
+              >
+                <li class="sidebar-toggler-wrapper hide">
+                  <div class="sidebar-toggler">
+                    <span></span>
+                  </div>
+                </li>
+                <li class="sidebar-user-panel">
+                  <div class="user-panel">
+                    <div class="pull-left image">
+                      <img
+                        src="assets/img/dp.jpg"
+                        class="img-circle user-img-circle"
+                        alt="User Image"
+                      />
+                    </div>
+                    <div class="pull-left info">
+                      <p>Carlos Jorquera</p>
+                      <a href="#"
+                        ><i class="fa fa-circle user-online"></i
+                        ><span class="txtOnline"> conectado</span></a
+                      >
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a href="index.html" class="nav-link nav-toggle">
+                    <i class="material-icons">school</i>
+                    <span class="title">Mis Cursos</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link nav-toggle">
+                    <i class="material-icons">event</i>
+                    <span class="title">Ruta Académica</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link nav-toggle">
+                    <i class="material-icons">event</i>
+                    <span class="title">Calendario de Pruebas</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link nav-toggle">
+                    <i class="material-icons">description</i>
+                    <span class="title">Crear Plantilla Prueba</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link nav-toggle">
+                    <i class="material-icons">view_quilt</i>
+                    <span class="title">Configuración</span>
+                    <span class="arrow"></span>
+                  </a>
+                  <ul class="sub-menu">
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">
+                        <span class="title">Calendario Académico</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">
+                        <span class="title">Feriados </span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="curso_admin.html" class="nav-link nav-toggle">
+                    <i class="material-icons">description</i>
+                    <span class="title">Admin Curso</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="curso_admin_pcurricular.html" class="nav-link nav-toggle">
+                    <i class="material-icons">description</i>
+                    <span class="title">Admin Curso P. Curricular</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="curso_admin_prevaluaciones.html" class="nav-link nav-toggle">
+                    <i class="material-icons">description</i>
+                    <span class="title">Curso Preevaluación</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="curso_apoderado.html" class="nav-link nav-toggle">
+                    <i class="material-icons">description</i>
+                    <span class="title">Vista Apoderado</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="curso_docente.html" class="nav-link nav-toggle">
+                    <i class="material-icons">description</i>
+                    <span class="title">Docente</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="curso_admin_estudiante.html" class="nav-link nav-toggle">
+                    <i class="material-icons">description</i>
+                    <span class="title">Estudiante</span>
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- end sidebar menu -->
+        <!-- start page content -->
+        <div class="page-content-wrapper">
+          <div class="page-content">
+            <div class="page-bar">
+              <div class="page-title-breadcrumb">
+                <div class="pull-left">
+                  <div class="page-title">Panel Control</div>
+                </div>
+                <ol class="breadcrumb page-breadcrumb pull-right">
+                  <li>
+                    <i class="fa fa-home"></i>&nbsp;<a
+                      class="parent-item"
+                      href="index.html"
+                      >Inicio</a
+                    >&nbsp;<i class="fa fa-angle-right"></i>
+                  </li>
+                  <li class="active">Panel Control</li>
+                </ol>
+              </div>
+            </div>
+            <!-- start widget -->
+            <div class="state-overview">
+              <div class="row">
+                <div class="col-xl-3 col-md-6 col-12">
+                  <div class="info-box bg-b-green">
+                    <span class="info-box-icon push-bottom"
+                      ><i class="material-icons">group</i></span
+                    >
+                    <div class="info-box-content">
+                      <span class="info-box-text">Alumnos aprobados</span>
+                      <span class="info-box-number">150</span>
+                      <div class="progress">
+                        <div class="progress-bar" style="width: 45%"></div>
+                      </div>
+                      <span class="progress-description">
+                        según avances del curso
+                      </span>
+                    </div>
+                    <!-- /.info-box-content -->
+                  </div>
+                  <!-- /.info-box -->
+                </div>
+                <!-- /.col -->
+                <div class="col-xl-3 col-md-6 col-12">
+                  <div class="info-box bg-b-yellow">
+                    <span class="info-box-icon push-bottom"
+                      ><i class="material-icons">group</i></span
+                    >
+                    <div class="info-box-content">
+                      <span class="info-box-text">Alumnos en riesgo</span>
+                      <span class="info-box-number">155</span>
+                      <div class="progress">
+                        <div class="progress-bar" style="width: 40%"></div>
+                      </div>
+                      <span class="progress-description">
+                        según avances del curso
+                      </span>
+                    </div>
+                    <!-- /.info-box-content -->
+                  </div>
+                  <!-- /.info-box -->
+                </div>
+                <!-- /.col -->
+                <div class="col-xl-3 col-md-6 col-12">
+                  <div class="info-box bg-b-pink">
+                    <span class="info-box-icon push-bottom"
+                      ><i class="material-icons">group</i></span
+                    >
+                    <div class="info-box-content">
+                      <span class="info-box-text">Alumnos reprobados</span>
+                      <span class="info-box-number">13</span>
+                      <div class="progress">
+                        <div class="progress-bar" style="width: 50%"></div>
+                      </div>
+                      <span class="progress-description">
+                        según avances del curso
+                      </span>
+                    </div>
+                    <!-- /.info-box-content -->
+                  </div>
+                  <!-- /.info-box -->
+                </div>
+                <!-- /.col -->
+                <div class="col-xl-3 col-md-6 col-12">
+                  <div class="info-box bg-b-blue">
+                    <span class="info-box-icon push-bottom"
+                      ><i class="material-icons">school</i></span
+                    >
+                    <div class="info-box-content">
+                      <span class="info-box-text">Total Cursos</span>
+                      <span class="info-box-number">8</span>
+                      <div class="progress">
+                        <div class="progress-bar" style="width: 85%"></div>
+                      </div>
+                      <span class="progress-description"> asignados </span>
+                    </div>
+                    <!-- /.info-box-content -->
+                  </div>
+                  <!-- /.info-box -->
+                </div>
+                <!-- /.col -->
+              </div>
+            </div>
+            <!-- end widget -->
+            <!-- chart start
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="card card-box">
+                  <div class="card-head">
+                    <header>University Survey</header>
+                    <div class="tools">
+                      <a
+                        class="fa fa-repeat btn-color box-refresh"
+                        href="javascript:;"
+                      ></a>
+                      <a
+                        class="t-collapse btn-color fa fa-chevron-down"
+                        href="javascript:;"
+                      ></a>
+                      <a
+                        class="t-close btn-color fa fa-times"
+                        href="javascript:;"
+                      ></a>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="recent-report__chart">
+                      <div id="chart1"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="card card-box">
+                  <div class="card-head">
+                    <header>University Survey</header>
+                    <div class="tools">
+                      <a
+                        class="fa fa-repeat btn-color box-refresh"
+                        href="javascript:;"
+                      ></a>
+                      <a
+                        class="t-collapse btn-color fa fa-chevron-down"
+                        href="javascript:;"
+                      ></a>
+                      <a
+                        class="t-close btn-color fa fa-times"
+                        href="javascript:;"
+                      ></a>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="recent-report__chart">
+                      <div id="chart2"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            Chart end -->
+            <!-- start course list -->
+            <div class="row">
+              <div class="col-lg-3 col-md-6 col-12 col-sm-6">
+                <div class="blogThumb">
+                  <div class="thumb-center">
+                    <img
+                      class="img-responsive"
+                      alt="user"
+                      src="https://media.licdn.com/dms/image/C4E12AQHdes2D8w18UA/article-cover_image-shrink_720_1280/0/1633241624260?e=1690416000&v=beta&t=WuJLLez3zQ8PUoxXk3u_i9ncsGY8qZpEoHZij3nC5Sc"
+                    />
+                  </div>
+                  <div class="course-box">
+                    <h4>Informe de personalidada</h4>
+                    <div class="text-muted">
+                      <span class="m-r-10">Curso: 7-C</span>
+                      <a class="course-likes m-l-10" href="#"
+                        ><i class="fa fa-check-square-o"></i> Promedio: 5,4</a
+                      >
+                    </div>
+                    <p>
+                      <span
+                        ><i class="ti-alarm-clock"></i> Aprobación: 100%</span
+                      >
+                    </p>
+                    <p>
+                      <span
+                        ><i class="ti-user"></i> Professor: Carlos Jorquera</span
+                      >
+                    </p>
+                    <p>
+                      <span
+                        ><i class="fa fa-graduation-cap"></i> Alumnos: 25</span
+                      >
+                    </p>
+                    <button
+                      type="button"
+                      class="
+                        mdl-button mdl-js-button
+                        mdl-button--raised
+                        mdl-js-ripple-effect
+                        m-b-10
+                        btn-info
+                      "
+                    >
+                      Entrar al curso
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12 col-sm-6">
+                <div class="blogThumb">
+                  <div class="thumb-center">
+                    <img
+                      class="img-responsive"
+                      alt="user"
+                      src="https://europharma.fr/data/images/istock-1162485452-1.jpg"
+                    />
+                  </div>
+                  <div class="course-box">
+                    <h4>Matemática / Mathematics</h4>
+                    <div class="text-muted">
+                      <span class="m-r-10">Curso: 7-A</span>
+                      <a class="course-likes m-l-10" href="#"
+                        ><i class="fa fa-check-square-o"></i> Promedio: 5,8</a
+                      >
+                    </div>
+                    <p>
+                      <span
+                        ><i class="ti-alarm-clock"></i> Aprobación: 100%</span
+                      >
+                    </p>
+                    <p>
+                      <span
+                        ><i class="ti-user"></i> Professor: Carlos Joorquera</span
+                      >
+                    </p>
+                    <p>
+                      <span
+                        ><i class="fa fa-graduation-cap"></i> Alumnos: 28</span
+                      >
+                    </p>
+                    <button
+                      type="button"
+                      class="
+                        mdl-button mdl-js-button
+                        mdl-button--raised
+                        mdl-js-ripple-effect
+                        m-b-10
+                        btn-info
+                      "
+                      onclick="window.open('curso_docente.html')"
+                    >
+                      Entrar al curso
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12 col-sm-6">
+                <div class="blogThumb">
+                  <div class="thumb-center">
+                    <img
+                      class="img-responsive"
+                      alt="user"
+                      src="https://media.licdn.com/dms/image/C4E12AQHdes2D8w18UA/article-cover_image-shrink_720_1280/0/1633241624260?e=1690416000&v=beta&t=WuJLLez3zQ8PUoxXk3u_i9ncsGY8qZpEoHZij3nC5Sc"
+                    />
+                  </div>
+                  <div class="course-box">
+                    <h4>Orientación</h4>
+                    <div class="text-muted">
+                      <span class="m-r-10">Curso: 4-D</span>
+                      <a class="course-likes m-l-10" href="#"
+                        ><i class="fa fa-check-square-o"></i> Promedio: 6,4</a
+                      >
+                    </div>
+                    <p>
+                      <span
+                        ><i class="ti-alarm-clock"></i> Aprobación: 100%</span
+                      >
+                    </p>
+                    <p>
+                      <span
+                        ><i class="ti-user"></i> Professor: Carlos Joorquera</span
+                      >
+                    </p>
+                    <p>
+                      <span
+                        ><i class="fa fa-graduation-cap"></i> Alumnos: 23</span
+                      >
+                    </p>
+                    <button
+                      type="button"
+                      class="
+                        mdl-button mdl-js-button
+                        mdl-button--raised
+                        mdl-js-ripple-effect
+                        m-b-10
+                        btn-info
+                      "
+                    >
+                      Entrar al curso
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12 col-sm-6">
+                <div class="blogThumb">
+                  <div class="thumb-center">
+                    <img
+                      class="img-responsive"
+                      alt="user"
+                      src="https://europharma.fr/data/images/istock-1162485452-1.jpg"
+                    />
+                  </div>
+                  <div class="course-box">
+                    <h4>Geometría 3d</h4>
+                    <div class="text-muted">
+                      <span class="m-r-10">Curso: 8-D</span>
+                      <a class="course-likes m-l-10" href="#"
+                        ><i class="fa fa-check-square-o"></i> Promedio: 5,1</a
+                      >
+                    </div>
+                    <p>
+                      <span
+                        ><i class="ti-alarm-clock"></i> Aprobación: 100%</span
+                      >
+                    </p>
+                    <p>
+                      <span
+                        ><i class="ti-user"></i> Professor: Carlos Joorquera</span
+                      >
+                    </p>
+                    <p>
+                      <span
+                        ><i class="fa fa-graduation-cap"></i> Alumnos: 22</span
+                      >
+                    </p>
+                    <button
+                      type="button"
+                      class="
+                        mdl-button mdl-js-button
+                        mdl-button--raised
+                        mdl-js-ripple-effect
+                        m-b-10
+                        btn-info
+                      "
+                    >
+                      Entrar al curso
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-3 col-md-6 col-12 col-sm-6">
+                <div class="blogThumb">
+                  <div class="thumb-center">
+                    <img
+                      class="img-responsive"
+                      alt="user"
+                      src="https://media.licdn.com/dms/image/C4E12AQHdes2D8w18UA/article-cover_image-shrink_720_1280/0/1633241624260?e=1690416000&v=beta&t=WuJLLez3zQ8PUoxXk3u_i9ncsGY8qZpEoHZij3nC5Sc"
+                    />
+                  </div>
+                  <div class="course-box">
+                    <h4>Informe de personalidada</h4>
+                    <div class="text-muted">
+                      <span class="m-r-10">Curso: 6-A</span>
+                      <a class="course-likes m-l-10" href="#"
+                        ><i class="fa fa-check-square-o"></i> N/A</a
+                      >
+                    </div>
+                    <p>
+                      <span
+                        ><i class="ti-alarm-clock"></i> Aprobación: 100%</span
+                      >
+                    </p>
+                    <p>
+                      <span
+                        ><i class="ti-user"></i> Professor: Carlos Joorquera</span
+                      >
+                    </p>
+                    <p>
+                      <span
+                        ><i class="fa fa-graduation-cap"></i> Alumnos: 28</span
+                      >
+                    </p>
+                    <button
+                      type="button"
+                      class="
+                        mdl-button mdl-js-button
+                        mdl-button--raised
+                        mdl-js-ripple-effect
+                        m-b-10
+                        btn-info
+                      "
+                    >
+                      Entrar al curso
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12 col-sm-6">
+                <div class="blogThumb">
+                  <div class="thumb-center">
+                    <img
+                      class="img-responsive"
+                      alt="user"
+                      src="https://europharma.fr/data/images/istock-1162485452-1.jpg"
+                    />
+                  </div>
+                  <div class="course-box">
+                    <h4>Matemática / Mathematics</h4>
+                    <div class="text-muted">
+                      <span class="m-r-10">Curso: 6-D</span>
+                      <a class="course-likes m-l-10" href="#"
+                        ><i class="fa fa-check-square-o"></i> Promedio: 5,9</a
+                      >
+                    </div>
+                    <p>
+                      <span
+                        ><i class="ti-alarm-clock"></i> Aprobación: 100%</span
+                      >
+                    </p>
+                    <p>
+                      <span
+                        ><i class="ti-user"></i> Professor: Carlos Joorquera</span
+                      >
+                    </p>
+                    <p>
+                      <span
+                        ><i class="fa fa-graduation-cap"></i> Alumnos: 22</span
+                      >
+                    </p>
+                    <button
+                      type="button"
+                      class="
+                        mdl-button mdl-js-button
+                        mdl-button--raised
+                        mdl-js-ripple-effect
+                        m-b-10
+                        btn-info
+                      "
+                    >
+                      Entrar al curso
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12 col-sm-6">
+                <div class="blogThumb">
+                  <div class="thumb-center">
+                    <img
+                      class="img-responsive"
+                      alt="user"
+                      src="https://media.licdn.com/dms/image/C4E12AQHdes2D8w18UA/article-cover_image-shrink_720_1280/0/1633241624260?e=1690416000&v=beta&t=WuJLLez3zQ8PUoxXk3u_i9ncsGY8qZpEoHZij3nC5Sc"
+                    />
+                  </div>
+                  <div class="course-box">
+                    <h4>Orientación</h4>
+                    <div class="text-muted">
+                      <span class="m-r-10">Curso: 5-B</span>
+                      <a class="course-likes m-l-10" href="#"
+                        ><i class="fa fa-check-square-o"></i> N/A</a
+                      >
+                    </div>
+                    <p>
+                      <span
+                        ><i class="ti-alarm-clock"></i> Aprobación: 100%</span
+                      >
+                    </p>
+                    <p>
+                      <span
+                        ><i class="ti-user"></i> Professor: Carlos Joorquera</span
+                      >
+                    </p>
+                    <p>
+                      <span
+                        ><i class="fa fa-graduation-cap"></i> Alumnos: 29</span
+                      >
+                    </p>
+                    <button
+                      type="button"
+                      class="
+                        mdl-button mdl-js-button
+                        mdl-button--raised
+                        mdl-js-ripple-effect
+                        m-b-10
+                        btn-info
+                      "
+                    >
+                      Entrar al curso
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12 col-sm-6">
+                <div class="blogThumb">
+                  <div class="thumb-center">
+                    <img
+                      class="img-responsive"
+                      alt="user"
+                      src="https://europharma.fr/data/images/istock-1162485452-1.jpg"
+                    />
+                  </div>
+                  <div class="course-box">
+                    <h4>Geometría 3d</h4>
+                    <div class="text-muted">
+                      <span class="m-r-10">Curso: 8-D</span>
+                      <a class="course-likes m-l-10" href="#"
+                        ><i class="fa fa-check-square-o"></i> Promedio: 5,1</a
+                      >
+                    </div>
+                    <p>
+                      <span
+                        ><i class="ti-alarm-clock"></i> Aprobación: 100%</span
+                      >
+                    </p>
+                    <p>
+                      <span
+                        ><i class="ti-user"></i> Professor: Carlos Joorquera</span
+                      >
+                    </p>
+                    <p>
+                      <span
+                        ><i class="fa fa-graduation-cap"></i> Alumnos: 22</span
+                      >
+                    </p>
+                    <button
+                      type="button"
+                      class="
+                        mdl-button mdl-js-button
+                        mdl-button--raised
+                        mdl-js-ripple-effect
+                        m-b-10
+                        btn-info
+                      "
+                    >
+                      Entrar al curso
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End course list -->
+          </div>
+        </div>
+        <!-- end page content -->
+        <!-- start chat sidebar -->
+        <div class="chat-sidebar-container" data-close-on-body-click="false">
+          <div class="chat-sidebar">
+            <ul class="nav nav-tabs">
+              <li class="nav-item">
+                <a
+                  href="#quick_sidebar_tab_1"
+                  class="nav-link active tab-icon"
+                  data-bs-toggle="tab"
+                >
+                  <i class="material-icons">chat</i>Chat
+                  <span class="badge badge-danger">4</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="#quick_sidebar_tab_3"
+                  class="nav-link tab-icon"
+                  data-bs-toggle="tab"
+                >
+                  <i class="material-icons">settings</i>
+                  Settings
+                </a>
+              </li>
+            </ul>
+            <div class="tab-content">
+              <!-- Start Doctor Chat -->
+              <div
+                class="tab-pane active chat-sidebar-chat in active show"
+                role="tabpanel"
+                id="quick_sidebar_tab_1"
+              >
+                <div class="chat-sidebar-list">
+                  <div
+                    class="chat-sidebar-chat-users slimscroll-style"
+                    data-rail-color="#ddd"
+                    data-wrapper-class="chat-sidebar-list"
+                  >
+                    <div class="chat-header">
+                      <h5 class="list-heading">Online</h5>
+                    </div>
+                    <ul class="media-list list-items">
+                      <li class="media">
+                        <img
+                          class="media-object"
+                          src="assets/img/prof/prof3.jpg"
+                          width="35"
+                          height="35"
+                          alt="..."
+                        />
+                        <i class="online dot"></i>
+                        <div class="media-body">
+                          <h5 class="media-heading">John Deo</h5>
+                          <div class="media-heading-sub">Spine Surgeon</div>
+                        </div>
+                      </li>
+                      <li class="media">
+                        <div class="media-status">
+                          <span class="badge badge-success">5</span>
+                        </div>
+                        <img
+                          class="media-object"
+                          src="assets/img/prof/prof1.jpg"
+                          width="35"
+                          height="35"
+                          alt="..."
+                        />
+                        <i class="busy dot"></i>
+                        <div class="media-body">
+                          <h5 class="media-heading">Rajesh</h5>
+                          <div class="media-heading-sub">Director</div>
+                        </div>
+                      </li>
+                      <li class="media">
+                        <img
+                          class="media-object"
+                          src="assets/img/prof/prof5.jpg"
+                          width="35"
+                          height="35"
+                          alt="..."
+                        />
+                        <i class="away dot"></i>
+                        <div class="media-body">
+                          <h5 class="media-heading">Jacob Ryan</h5>
+                          <div class="media-heading-sub">Ortho Surgeon</div>
+                        </div>
+                      </li>
+                      <li class="media">
+                        <div class="media-status">
+                          <span class="badge badge-danger">8</span>
+                        </div>
+                        <img
+                          class="media-object"
+                          src="assets/img/prof/prof4.jpg"
+                          width="35"
+                          height="35"
+                          alt="..."
+                        />
+                        <i class="online dot"></i>
+                        <div class="media-body">
+                          <h5 class="media-heading">Kehn Anderson</h5>
+                          <div class="media-heading-sub">CEO</div>
+                        </div>
+                      </li>
+                      <li class="media">
+                        <img
+                          class="media-object"
+                          src="assets/img/prof/prof2.jpg"
+                          width="35"
+                          height="35"
+                          alt="..."
+                        />
+                        <i class="busy dot"></i>
+                        <div class="media-body">
+                          <h5 class="media-heading">Sarah Smith</h5>
+                          <div class="media-heading-sub">Anaesthetics</div>
+                        </div>
+                      </li>
+                      <li class="media">
+                        <img
+                          class="media-object"
+                          src="assets/img/prof/prof7.jpg"
+                          width="35"
+                          height="35"
+                          alt="..."
+                        />
+                        <i class="online dot"></i>
+                        <div class="media-body">
+                          <h5 class="media-heading">Vlad Cardella</h5>
+                          <div class="media-heading-sub">Cardiologist</div>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="chat-header">
+                      <h5 class="list-heading">Offline</h5>
+                    </div>
+                    <ul class="media-list list-items">
+                      <li class="media">
+                        <div class="media-status">
+                          <span class="badge badge-warning">4</span>
+                        </div>
+                        <img
+                          class="media-object"
+                          src="assets/img/prof/prof6.jpg"
+                          width="35"
+                          height="35"
+                          alt="..."
+                        />
+                        <i class="offline dot"></i>
+                        <div class="media-body">
+                          <h5 class="media-heading">Jennifer Maklen</h5>
+                          <div class="media-heading-sub">Nurse</div>
+                          <div class="media-heading-small">
+                            Last seen 01:20 AM
+                          </div>
+                        </div>
+                      </li>
+                      <li class="media">
+                        <img
+                          class="media-object"
+                          src="assets/img/prof/prof8.jpg"
+                          width="35"
+                          height="35"
+                          alt="..."
+                        />
+                        <i class="offline dot"></i>
+                        <div class="media-body">
+                          <h5 class="media-heading">Lina Smith</h5>
+                          <div class="media-heading-sub">Ortho Surgeon</div>
+                          <div class="media-heading-small">
+                            Last seen 11:14 PM
+                          </div>
+                        </div>
+                      </li>
+                      <li class="media">
+                        <div class="media-status">
+                          <span class="badge badge-success">9</span>
+                        </div>
+                        <img
+                          class="media-object"
+                          src="assets/img/prof/prof9.jpg"
+                          width="35"
+                          height="35"
+                          alt="..."
+                        />
+                        <i class="offline dot"></i>
+                        <div class="media-body">
+                          <h5 class="media-heading">Jeff Adam</h5>
+                          <div class="media-heading-sub">Compounder</div>
+                          <div class="media-heading-small">
+                            Last seen 3:31 PM
+                          </div>
+                        </div>
+                      </li>
+                      <li class="media">
+                        <img
+                          class="media-object"
+                          src="assets/img/prof/prof10.jpg"
+                          width="35"
+                          height="35"
+                          alt="..."
+                        />
+                        <i class="offline dot"></i>
+                        <div class="media-body">
+                          <h5 class="media-heading">Anjelina Cardella</h5>
+                          <div class="media-heading-sub">Physiotherapist</div>
+                          <div class="media-heading-small">
+                            Last seen 7:45 PM
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- End Doctor Chat -->
+              <!-- Start Setting Panel -->
+              <div
+                class="tab-pane chat-sidebar-settings"
+                role="tabpanel"
+                id="quick_sidebar_tab_3"
+              >
+                <div class="chat-sidebar-settings-list slimscroll-style">
+                  <div class="chat-header">
+                    <h5 class="list-heading">Layout Settings</h5>
+                  </div>
+                  <div class="chatpane inner-content">
+                    <div class="settings-list">
+                      <div class="setting-item">
+                        <div class="setting-text">Sidebar Position</div>
+                        <div class="setting-set">
+                          <select
+                            class="
+                              sidebar-pos-option
+                              form-control
+                              input-inline input-sm input-small
+                            "
+                          >
+                            <option value="left" selected="selected">
+                              Left
+                            </option>
+                            <option value="right">Right</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="setting-item">
+                        <div class="setting-text">Header</div>
+                        <div class="setting-set">
+                          <select
+                            class="
+                              page-header-option
+                              form-control
+                              input-inline input-sm input-small
+                            "
+                          >
+                            <option value="fixed" selected="selected">
+                              Fixed
+                            </option>
+                            <option value="default">Default</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="setting-item">
+                        <div class="setting-text">Footer</div>
+                        <div class="setting-set">
+                          <select
+                            class="
+                              page-footer-option
+                              form-control
+                              input-inline input-sm input-small
+                            "
+                          >
+                            <option value="fixed">Fixed</option>
+                            <option value="default" selected="selected">
+                              Default
+                            </option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat-header">
+                      <h5 class="list-heading">Account Settings</h5>
+                    </div>
+                    <div class="settings-list">
+                      <div class="setting-item">
+                        <div class="setting-text">Notifications</div>
+                        <div class="setting-set">
+                          <div class="switch">
+                            <label
+                              class="
+                                mdl-switch mdl-js-switch mdl-js-ripple-effect
+                              "
+                              for="switch-1"
+                            >
+                              <input
+                                type="checkbox"
+                                id="switch-1"
+                                class="mdl-switch__input"
+                                checked
+                              />
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="setting-item">
+                        <div class="setting-text">Show Online</div>
+                        <div class="setting-set">
+                          <div class="switch">
+                            <label
+                              class="
+                                mdl-switch mdl-js-switch mdl-js-ripple-effect
+                              "
+                              for="switch-7"
+                            >
+                              <input
+                                type="checkbox"
+                                id="switch-7"
+                                class="mdl-switch__input"
+                                checked
+                              />
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="setting-item">
+                        <div class="setting-text">Status</div>
+                        <div class="setting-set">
+                          <div class="switch">
+                            <label
+                              class="
+                                mdl-switch mdl-js-switch mdl-js-ripple-effect
+                              "
+                              for="switch-2"
+                            >
+                              <input
+                                type="checkbox"
+                                id="switch-2"
+                                class="mdl-switch__input"
+                                checked
+                              />
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="setting-item">
+                        <div class="setting-text">2 Steps Verification</div>
+                        <div class="setting-set">
+                          <div class="switch">
+                            <label
+                              class="
+                                mdl-switch mdl-js-switch mdl-js-ripple-effect
+                              "
+                              for="switch-3"
+                            >
+                              <input
+                                type="checkbox"
+                                id="switch-3"
+                                class="mdl-switch__input"
+                                checked
+                              />
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat-header">
+                      <h5 class="list-heading">General Settings</h5>
+                    </div>
+                    <div class="settings-list">
+                      <div class="setting-item">
+                        <div class="setting-text">Location</div>
+                        <div class="setting-set">
+                          <div class="switch">
+                            <label
+                              class="
+                                mdl-switch mdl-js-switch mdl-js-ripple-effect
+                              "
+                              for="switch-4"
+                            >
+                              <input
+                                type="checkbox"
+                                id="switch-4"
+                                class="mdl-switch__input"
+                                checked
+                              />
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="setting-item">
+                        <div class="setting-text">Save Histry</div>
+                        <div class="setting-set">
+                          <div class="switch">
+                            <label
+                              class="
+                                mdl-switch mdl-js-switch mdl-js-ripple-effect
+                              "
+                              for="switch-5"
+                            >
+                              <input
+                                type="checkbox"
+                                id="switch-5"
+                                class="mdl-switch__input"
+                                checked
+                              />
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="setting-item">
+                        <div class="setting-text">Auto Updates</div>
+                        <div class="setting-set">
+                          <div class="switch">
+                            <label
+                              class="
+                                mdl-switch mdl-js-switch mdl-js-ripple-effect
+                              "
+                              for="switch-6"
+                            >
+                              <input
+                                type="checkbox"
+                                id="switch-6"
+                                class="mdl-switch__input"
+                                checked
+                              />
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end chat sidebar -->
+      </div>
+      <!-- end page container -->
+      <!-- start footer -->
+      <div class="page-footer">
+        <div class="page-footer-inner">
+          2017 &copy; Smart University Theme By
+          <a href="mailto:redstartheme@gmail.com" target="_top" class="makerCss"
+            >Redstar Theme</a
+          >
+        </div>
+        <div class="scroll-to-top">
+          <i class="icon-arrow-up"></i>
+        </div>
+      </div>
+      <!-- end footer -->
+    </div>
+    <!-- start js include path -->
+    <script src="assets/plugins/jquery/jquery.min.js"></script>
+    <script src="assets/plugins/popper/popper.js"></script>
+    <script src="assets/plugins/jquery-blockui/jquery.blockui.min.js"></script>
+    <script src="assets/plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+    <!-- bootstrap -->
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+    <script src="assets/plugins/sparkline/jquery.sparkline.js"></script>
+    <script src="assets/js/pages/sparkline/sparkline-data.js"></script>
+    <!-- Common js-->
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/layout.js"></script>
+    <script src="assets/js/theme-color.js"></script>
+    <!-- material -->
+    <script src="assets/plugins/material/material.min.js"></script>
+    <!--apex chart-->
+    <script src="assets/plugins/apexcharts/apexcharts.min.js"></script>
+    <script src="assets/js/pages/chart/chartjs/home-data.js"></script>
+    <!-- summernote -->
+    <script src="assets/plugins/summernote/summernote.js"></script>
+    <script src="assets/js/pages/summernote/summernote-data.js"></script>
+    <!-- end js include path -->
+  </body>
+</html>

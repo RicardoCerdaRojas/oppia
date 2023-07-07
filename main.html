@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta name="description" content="Responsive Admin Template" />
+    <meta name="author" content="SmartUniversity" />
+    <title>Oppia | Plataforma Educativa </title>
+    <!-- google font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- icons -->
+    <link
+      href="fonts/simple-line-icons/simple-line-icons.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="fonts/font-awesome/css/font-awesome.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="fonts/material-design-icons/material-icon.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!--bootstrap -->
+    <link
+      href="assets/plugins/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="assets/plugins/summernote/summernote.css" rel="stylesheet" />
+    <!-- morris chart -->
+    <link
+      href="assets/plugins/morris/morris.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Material Design Lite CSS -->
+    <link rel="stylesheet" href="assets/plugins/material/material.min.css" />
+    <link rel="stylesheet" href="assets/css/material_style.css" />
+    <!-- inbox style -->
+    <link
+      href="assets/css/pages/inbox.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Theme Styles -->
+    <link
+      href="assets/css/theme/light/theme_style.css"
+      rel="stylesheet"
+      id="rt_style_components"
+      type="text/css"
+    />
+    <link href="assets/css/plugins.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="assets/css/theme/light/style.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+    <link
+      href="assets/css/theme/light/theme-color.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Owl Carousel Assets -->
+    <link
+      href="assets/plugins/owl-carousel/owl.carousel.css"
+      rel="stylesheet"
+    />
+    <link href="assets/plugins/owl-carousel/owl.theme.css" rel="stylesheet" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/img/favicon.ico" />
+  </head>
+
+  <body
+    class="
+      page-header-fixed
+      sidemenu-closed
+      page-content-white page-md
+      header-white
+      white-sidebar-color
+      logo-indigo
+    "
+  >
+    <div class="page-wrapper">
+      <!-- start header -->
+      <div class="page-header navbar navbar-fixed-top">
+        <div class="page-header-inner">
+          <!-- logo start -->
+          <div class="page-logo">
+            <a href="index.html">
+              <span class="logo-icon material-icons fa-rotate-45">school</span>
+              <span class="logo-default">Oppia</span>
+            </a>
+          </div>
+          <!-- logo end -->
+
+          <!-- start mobile menu -->
+          <a
+            class="menu-toggler responsive-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target=".navbar-collapse"
+          >
+            <span></span>
+          </a>
+          <!-- end mobile menu -->
+          <!-- start header menu -->
+          <div class="top-menu">
+            <ul class="nav navbar-nav pull-right">
+              <li>
+                <a class="fullscreen-btn"><i class="fa fa-arrows-alt"></i></a>
+              </li>
+              <!-- start language menu -->
+              <li class="dropdown language-switch">
+                <a
+                  class="dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img
+                    src="assets/img/flags/cl.png"
+                    class="position-left"
+                    alt=""
+                  />
+                  Español <span class="fa fa-angle-down"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="english"
+                      ><img src="assets/img/flags/gb.png" alt="" /> English</a
+                    >
+                  </li>
+                  <li>
+                    <a class="espana"
+                      ><img src="assets/img/flags/es.png" alt="" /> Español</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <!-- end language menu -->
+
+              <!-- start manage user dropdown -->
+              <li class="dropdown dropdown-user">
+                <a
+                  class="dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  data-hover="dropdown"
+                  data-close-others="true"
+                >
+                  <img alt="" class="img-circle" src="assets/img/dp.jpg" />
+                  <span class="username username-hide-on-mobile"> Jorge </span>
+                  <i class="fa fa-angle-down"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-default">
+                  <li>
+                    <a href="user_profile.html">
+                      <i class="icon-user"></i> Profile
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"> <i class="icon-settings"></i> Settings </a>
+                  </li>
+                  <li>
+                    <a href="#"> <i class="icon-directions"></i> Help </a>
+                  </li>
+                  <li class="divider"></li>
+                  <li>
+                    <a href="lock_screen.html">
+                      <i class="icon-lock"></i> Lock
+                    </a>
+                  </li>
+                  <li>
+                    <a href="login.html">
+                      <i class="icon-logout"></i> Log Out
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <!-- end manage user dropdown -->
+              <li class="dropdown dropdown-quick-sidebar-toggler">
+                <a
+                  id="headerSettingButton"
+                  class="mdl-button mdl-js-button mdl-button--icon pull-right"
+                  data-upgraded=",MaterialButton"
+                >
+                  <i class="material-icons">more_vert</i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- end header -->
+
+      <!-- end color quick setting -->
+      <!-- start page container -->
+      <div class="page-container">
+
+        <!-- start page content -->
+        <div class="page-content-wrapper">
+          <div class="page-content">
+            <div class="page-bar">
+              <div class="page-title-breadcrumb">
+                <div class="pull-left">
+                  <div class="page-title">Perfiles de acceso</div>
+                </div>
+                <ol class="breadcrumb page-breadcrumb pull-right">
+                  <li>
+                    <i class="fa fa-home"></i>&nbsp;<a
+                      class="parent-item"
+                      href="index.html"
+                      >Home</a
+                    >&nbsp;<i class="fa fa-angle-right"></i>
+                  </li>
+                  <li class="active">Perfiles</li>
+                </ol>
+              </div>
+            </div>
+            <!-- start widget -->
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                <div class="row clearfix">
+                  <div class="col-md-6 col-sm-6 col-12">
+                    <div class="card">
+                      <div class="panel-body">
+                        <a href="curso_admin.html"><h3>Directivos</h3></a>
+                        <div
+                          class="
+                            progressbar-xs
+                            progress-rounded progress-striped progress
+                            ng-isolate-scope
+                            active
+                          "
+                        >
+                          <div
+                            class="progress-bar progress-bar-success"
+                            role="progressbar"
+                            aria-valuenow="65"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                            style="width: 100%"
+                          ></div>
+                        </div>
+                        <span class="text-small margin-top-10 full-width"
+                          >Acceso total</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-sm-6 col-12">
+                    <div class="card">
+                      <div class="panel-body">
+                        <a href="curso_apoderado.html"><h3>Apoderados</h3></a>
+                        <div
+                          class="
+                            progressbar-xs
+                            progress-rounded progress-striped progress
+                            ng-isolate-scope
+                            active
+                          "
+                        >
+                          <div
+                            class="progress-bar progress-bar-danger"
+                            role="progressbar"
+                            aria-valuenow="68"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                            style="width: 100%"
+                          ></div>
+                        </div>
+                        <span class="text-small margin-top-10 full-width"
+                          >Acceso a información de sus hijos</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-sm-6 col-12">
+                    <div class="card">
+                      <div class="panel-body">
+                        <a href="curso_docente_main.html"><h3>Docentes</h3></a>
+                        <div
+                          class="
+                            progressbar-xs
+                            progress-rounded progress-striped progress
+                            ng-isolate-scope
+                            active
+                          "
+                        >
+                          <div
+                            class="progress-bar progress-bar-warning"
+                            role="progressbar"
+                            aria-valuenow="52"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                            style="width: 100%"
+                          ></div>
+                        </div>
+                        <span class="text-small margin-top-10 full-width"
+                          >Acceso a información de sus cursos</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-sm-6 col-12">
+                    <div class="card">
+                      <div class="panel-body">
+                        <a href="curso_estudiante.html"><h3>Alumnos</h3></a>
+                        <div
+                          class="
+                            progressbar-xs
+                            progress-rounded progress-striped progress
+                            ng-isolate-scope
+                            active
+                          "
+                        >
+                          <div
+                            class="progress-bar progress-bar-info"
+                            role="progressbar"
+                            aria-valuenow="56"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                            style="width: 100%"
+                          ></div>
+                        </div>
+                        <span class="text-small margin-top-10 full-width"
+                          >Acceso a su curso y materias</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <!-- end widget -->
+
+          </div>
+        </div>
+        <!-- end page content -->
+        <!-- start chat sidebar -->
+
+        <!-- end chat sidebar -->
+      </div>
+      <!-- end page container -->
+
+    </div>
+    <script src="assets/plugins/jquery/jquery.min.js"></script>
+    <script src="assets/plugins/popper/popper.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/plugins/jquery-blockui/jquery.blockui.min.js"></script>
+    <script src="assets/plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+    <script src="assets/plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+    <script src="assets/plugins/moment/moment.min.js"></script>
+    <script src="assets/plugins/counterup/jquery.waypoints.min.js"></script>
+    <script src="assets/plugins/counterup/jquery.counterup.min.js"></script>
+    <!-- owl carousel -->
+    <script src="assets/plugins/owl-carousel/owl.carousel.js"></script>
+    <script src="assets/js/pages/owl-carousel/owl_data.js"></script>
+    <!-- Common js-->
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/layout.js"></script>
+    <script src="assets/js/theme-color.js"></script>
+    <!-- Material -->
+    <script src="assets/plugins/material/material.min.js"></script>
+    <script src="assets/plugins/sparkline/jquery.sparkline.js"></script>
+    <script src="assets/js/pages/sparkline/sparkline-data.js"></script>
+    <!-- summernote -->
+    <script src="assets/plugins/summernote/summernote.js"></script>
+    <script src="assets/js/pages/summernote/summernote-data.js"></script>
+  </body>
+</html>
