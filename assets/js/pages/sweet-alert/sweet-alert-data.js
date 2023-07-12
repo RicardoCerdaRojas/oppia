@@ -155,7 +155,7 @@ function showDialog10() {
 
 function showDialogNota1() {
 	Swal.fire({
-		title: "<a href='https://www.google.com' target='_blank' >Nota: 5,2</a>",
+		title: "<a href='assets/docs/prueba.pdf' target='_blank' >Nota: 5,2</a>",
 		text: "",
 		imageUrl: "assets/img/course/nota1.png",
 		imageWidth: 400,
@@ -175,7 +175,7 @@ function showDialogNota2() {
 }
 function showDialogNota3() {
 	Swal.fire({
-		title: "<a href='https://www.google.com' target='_blank' >Nota: 6,0</a>",
+		title: "<a href='assets/docs/prueba.pdf' target='_blank' >Nota: 6,0</a>",
 		text: "",
 		imageUrl: "assets/img/course/nota3.png",
 		imageWidth: 400,

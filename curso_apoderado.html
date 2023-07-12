@@ -66,7 +66,7 @@
       <div class="page-header-inner">
         <!-- logo start -->
         <div class="page-logo">
-          <a href="index.html">
+          <a href="main.html">
             <span class="logo-icon material-icons fa-rotate-45">school</span>
             <span class="logo-default">Oppia</span>
           </a>
@@ -454,7 +454,7 @@
               <li class="sidebar-user-panel">
                 <div class="user-panel">
                   <div class="pull-left image">
-                    <img src="https://socialtools.me/wp-content/uploads/2016/04/foto-de-perfil.jpg"
+                    <img src="assets/img/personas/apoderado.jpg"
                       class="img-square user-img-square" alt="User Image" />
                   </div>
                   <div class="pull-left info">
@@ -529,7 +529,7 @@
                   <div class="card-body no-padding height-9">
                     <div class="row">
                       <div class="profile-userpic">
-                        <img src="https://www.exprimiendolinkedin.com/wp-content/uploads/2017/12/Laura-150x150.jpg"
+                        <img src="assets/img/personas/alumna.jpg"
                           class="img-responsive" alt="" />
                       </div>
                     </div>
@@ -624,16 +624,13 @@
                             <a href="#tab3" class="nav-link" data-bs-toggle="tab">Anotaciones</a>
                           </li>
                           <li class="nav-item">
-                            <a href="#tab4" class="nav-link" data-bs-toggle="tab">Ficha Médica</a>
-                          </li>
-                          <li class="nav-item">
                             <a href="#tab4" class="nav-link" data-bs-toggle="tab">Profesores</a>
                           </li>
                           <li class="nav-item">
                             <a href="#tab4" class="nav-link" data-bs-toggle="tab">Salvaguarda</a>
                           </li>
                           <li class="nav-item">
-                            <a href="#tab4" class="nav-link" data-bs-toggle="tab">Enfermería</a>
+                            <a href="#tab5" class="nav-link" data-bs-toggle="tab">Enfermería</a>
                           </li>
                         </ul>
                       </div>
@@ -908,7 +905,7 @@
                             <div class="col-sm-12">
                               <div class="card-box">
                                 <div class="card-head">
-                                  <header>Justificativo</header>
+                                  <header>Registro Salvaguarda</header>
                                 </div>
                                 <div class="card-body row">
                                   <div class="col-lg-12 p-t-20">
@@ -927,6 +924,119 @@
                                     </div>
                                   </div>
                                   <div class="col-lg-12 p-t-20">
+                                    <div class="icon-holder">
+                                      <i class="material-icons f-left">file_download</i>
+                                      <a href="assets/docs/registro_inquietud.docx" target="_blank">Registro de Inquietud</a>
+                                    </div><br/>                                    <div class="icon-holder">
+                                      <i class="material-icons f-left">file_download</i>
+                                      <a href="assets/docs/registro_incidente.docx" target="_blank">Registro de Incidente</a>
+                                    </div><br/>
+                                    <label class="control-label col-md-3">Adjuntar Documento
+                                    </label>
+                                    <div class="col-md-12">
+                                      <div id="id_dropzone" class="dropzone dz-clickable">
+                                        <div class="dz-default dz-message"><span>Drop files here to upload</span></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-12 p-t-20 text-center">
+                                    <button type="button"
+                                      class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect m-b-10 m-r-20 btn-pink"
+                                      data-upgraded=",MaterialButton,MaterialRipple">Enviar<span
+                                        class="mdl-button__ripple-container"><span
+                                          class="mdl-ripple"></span></span></button>
+                                    <button type="button"
+                                      class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect m-b-10 btn-default"
+                                      data-upgraded=",MaterialButton,MaterialRipple">Limpiar<span
+                                        class="mdl-button__ripple-container"><span
+                                          class="mdl-ripple"></span></span></button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="inbox-body no-pad table-responsive">
+                            <table class="table table-inbox table-hover btn-sweetalert" id="t_justificativo"
+                              data-toggle="table" data-search="true">
+                              <thead>
+                                <tr>
+                                  <th>Asunto</th>
+                                  <th>Fecha</th>
+                                  <th></th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr class="read">
+                                  <td class="view-message">
+                                    <a href="#">Ausencia Médica</a>
+                                  </td>
+                                  <td class="inbox-small-cells">
+                                    Lunes 22, Octubre 2021
+                                  </td>
+                                  <td class="inbox-small-cells">
+                                    <button type="button"
+                                      class=" mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect m-b-10 btn-circle btn-primary"
+                                      data-type="showDialogNota2"> <i class="fa fa-envelope-open-o"></i> </button>
+                                  </td>
+                                </tr>
+                                <tr class="unread">
+                                  <td class="view-message">
+                                    <a href="#">Emergencia Familiar</a>
+                                  </td>
+                                  <td class="inbox-small-cells">
+                                    Jueves 17, Agosto 2021
+                                  </td>
+                                  <td class="inbox-small-cells">
+                                    <button type="button"
+                                      class=" mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect m-b-10 btn-circle btn-primary"
+                                      data-type="showDialogNota2"> <i class="fa fa-envelope-open-o"></i> </button>
+                                  </td>
+                                </tr>
+                                <tr class="unread">
+                                  <td class="view-message">
+                                    <a href="#">Ausencia Programada</a>
+                                  </td>
+                                  <td class="inbox-small-cells">
+                                    Martes 14, Mayo 2021
+                                  </td>
+                                  <td class="inbox-small-cells">
+                                    <button type="button"
+                                      class=" mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect m-b-10 btn-circle btn-primary"
+                                      data-type="showDialogNota2"> <i class="fa fa-envelope-open-o"></i> </button>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                        <div class="tab-pane" id="tab5">
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <div class="card-box">
+                                <div class="card-head">
+                                  <header>Registro Enfermería</header>
+                                </div>
+                                <div class="card-body row">
+                                  <div class="col-lg-12 p-t-20">
+                                    <div
+                                      class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width is-upgraded"
+                                      data-upgraded=",MaterialTextfield">
+                                      <input class="mdl-textfield__input" type="text" id="txtFirstName">
+                                      <label class="mdl-textfield__label">Asunto</label>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-12 p-t-20">
+                                    <div class="mdl-textfield mdl-js-textfield txt-full-width is-upgraded"
+                                      data-upgraded=",MaterialTextfield">
+                                      <textarea class="mdl-textfield__input" rows="4" id="text7"></textarea>
+                                      <label class="mdl-textfield__label" for="text7">Mensaje</label>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-12 p-t-20">
+                                    <div class="icon-holder">
+                                      <i class="material-icons f-left">file_download</i>
+                                      <a href="assets/docs/ficha_salud.docx" target="_blank">Descargar Ficha Salud</a>
+                                    </div><br/>
                                     <label class="control-label col-md-3">Adjuntar Documento
                                     </label>
                                     <div class="col-md-12">
